@@ -3,6 +3,7 @@ import io
 import pandas as pd
 from fastapi import FastAPI, UploadFile, File, HTTPException, Header, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 from typing import List, Dict, Any, Optional
 
@@ -59,7 +60,7 @@ class ChatRequest(BaseModel):
     messages: List[ChatMessage]
     api_key: Optional[str] = None
 
-@app.get("/health")
+@app.get("/api/health")
 def health_check():
     """Checks backend server health and model training status."""
     return {
@@ -68,7 +69,7 @@ def health_check():
         "metrics_available": len(engine.get_metrics()) > 0
     }
 
-@app.get("/model-info")
+@app.get("/api/model-info")
 def model_info():
     """Returns the performance metrics of the currently loaded model."""
     if engine.model is None:
@@ -81,7 +82,7 @@ def model_info():
         "features": engine.preprocess_df(pd.DataFrame([{"login_frequency": 1, "session_duration": 1, "feature_usage": 1, "support_tickets": 1, "subscription_age": 1, "plan_type": "Pro", "last_active_days": 1, "revenue": 100.0}])).columns.tolist()
     }
 
-@app.post("/predict")
+@app.post("/api/predict")
 def predict_churn(request: BatchPredictRequest):
     """
     Predicts churn risk and calculates SHAP value contribution details for a batch of customers.
@@ -114,7 +115,7 @@ def predict_churn(request: BatchPredictRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Prediction error: {str(e)}")
 
-@app.post("/train")
+@app.post("/api/train")
 async def train_model(file: UploadFile = File(...)):
     """
     Uploads a CSV of historical customer data (containing 'churn' label) 
@@ -154,7 +155,7 @@ async def train_model(file: UploadFile = File(...)):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Training failed: {str(e)}")
 
-@app.post("/recommend")
+@app.post("/api/recommend")
 def recommend_retention(request: RecommendationRequest):
     """
     Generates a markdown Customer Success Playbook based on customer metrics and SHAP scores,
@@ -170,7 +171,7 @@ def recommend_retention(request: RecommendationRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Recommendation failed: {str(e)}")
 
-@app.post("/generate-synthetic")
+@app.post("/api/generate-synthetic")
 def trigger_synthetic_generation(count: int = Query(1000, ge=100, le=5000)):
     """
     Generates a new synthetic customer dataset, trains the model on it, 
@@ -194,7 +195,7 @@ def trigger_synthetic_generation(count: int = Query(1000, ge=100, le=5000)):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to generate synthetic data: {str(e)}")
 
-@app.get("/global-importance")
+@app.get("/api/global-importance")
 def global_importance():
     """
     Returns global feature importance by reading the default synthetic customer database.
@@ -217,7 +218,7 @@ def global_importance():
     importance = engine.get_global_importance(df)
     return {"importance": importance}
 
-@app.post("/chat")
+@app.post("/api/chat")
 def chat_retention(request: ChatRequest):
     """
     Handles interactive chat dialogue about a customer's churn factors
@@ -233,3 +234,7 @@ def chat_retention(request: ChatRequest):
         return {"response": response}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Chat generation failed: {str(e)}")
+
+# Mount static files at root for local development and routing fallbacks
+if os.path.exists("src/frontend"):
+    app.mount("/", StaticFiles(directory="src/frontend", html=True), name="static")

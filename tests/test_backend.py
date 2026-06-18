@@ -9,14 +9,14 @@ from src.backend.main import app
 client = TestClient(app)
 
 def test_health_check():
-    response = client.get("/health")
+    response = client.get("/api/health")
     assert response.status_code == 200
     data = response.json()
     assert "status" in data
     assert data["status"] == "healthy"
 
 def test_generate_synthetic():
-    response = client.post("/generate-synthetic?count=100")
+    response = client.post("/api/generate-synthetic?count=100")
     assert response.status_code == 200
     data = response.json()
     assert "message" in data
@@ -24,11 +24,11 @@ def test_generate_synthetic():
     assert "feature_importance" in data
     
     # Model should be loaded now
-    health_r = client.get("/health")
+    health_r = client.get("/api/health")
     assert health_r.json()["model_loaded"] is True
 
 def test_model_info():
-    response = client.get("/model-info")
+    response = client.get("/api/model-info")
     assert response.status_code == 200
     data = response.json()
     assert data["status"] == "loaded"
@@ -54,7 +54,7 @@ def test_predict_endpoint():
         ]
     }
     
-    response = client.post("/predict", json=payload)
+    response = client.post("/api/predict", json=payload)
     assert response.status_code == 200
     data = response.json()
     assert "results" in data
@@ -90,7 +90,7 @@ def test_recommend_endpoint():
         "api_key": None
     }
     
-    response = client.post("/recommend", json=payload)
+    response = client.post("/api/recommend", json=payload)
     assert response.status_code == 200
     data = response.json()
     assert "playbook" in data
@@ -116,7 +116,7 @@ def test_train_endpoint():
     
     files = {"file": ("test_train.csv", csv_bytes, "text/csv")}
     
-    response = client.post("/train", files=files)
+    response = client.post("/api/train", files=files)
     assert response.status_code == 200
     data = response.json()
     assert "message" in data
@@ -153,7 +153,7 @@ def test_chat_endpoint():
         "api_key": None
     }
     
-    response = client.post("/chat", json=payload)
+    response = client.post("/api/chat", json=payload)
     assert response.status_code == 200
     data = response.json()
     assert "response" in data
