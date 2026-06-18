@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChurnIntel | SaaS Churn Intelligence Platform</title>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- CDNs for Icons and Charts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div>
+        <div class="brand-section">
+          <div class="brand-logo">
+            <i data-lucide="activity" style="width: 20px; height: 20px;"></i>
+          </div>
+          <span class="brand-name">ChurnIntel</span>
+        </div>
+        
+        <nav class="nav-menu">
+          <button class="nav-item active" data-tab="overview">
+            <i data-lucide="layout-dashboard" style="width: 18px; height: 18px;"></i>
+            Dashboard
+          </button>
+          <button class="nav-item" data-tab="inspector">
+            <i data-lucide="search" style="width: 18px; height: 18px;"></i>
+            Customer Inspector
+          </button>
+          <button class="nav-item" data-tab="predict">
+            <i data-lucide="upload-cloud" style="width: 18px; height: 18px;"></i>
+            Batch Predict
+          </button>
+          <button class="nav-item" data-tab="trainer">
+            <i data-lucide="sliders" style="width: 18px; height: 18px;"></i>
+            Model Trainer
+          </button>
+        </nav>
+      </div>
+
+      <!-- Config & API Panel -->
+      <div class="config-section">
+        <span class="config-title">Integration settings</span>
+        
+        <div class="input-group">
+          <label class="input-label" for="openai-key">OpenAI API Key</label>
+          <input type="password" id="openai-key" class="input-field" placeholder="sk-proj-..." help="Enables live ChatGPT interaction. Fallback used if empty.">
+        </div>
+        
+        <button id="btn-generate-synthetic" class="btn btn-secondary" style="width: 100%; margin-bottom: 8px;">
+          <i data-lucide="database" style="width: 16px; height: 16px;"></i>
+          Load Demo Data
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Board -->
+    <main class="main-content">
+      
+      <!-- Top Header -->
+      <header class="header-bar">
+        <div class="page-title-section">
+          <h1 id="header-page-title" class="page-title">SaaS Health Dashboard</h1>
+          <p id="header-page-subtitle" class="page-subtitle">Interactive churn analytics overview</p>
+        </div>
+        
+        <div class="api-badge">
+          <div id="api-status-dot" class="api-dot disconnected"></div>
+          <span id="api-status-text">Connecting to API...</span>
+        </div>
+      </header>
+
+      <!-- Dashboard Viewport -->
+      <div class="tab-content-container">
+        
+        <!-- ==================== TAB: OVERVIEW ==================== -->
+        <section id="panel-overview" class="tab-panel active">
+          <!-- Setup state warning if no dataset exists -->
+          <div id="overview-welcome-card" style="display: none;">
+            <div class="card" style="text-align: center; max-width: 600px; margin: 40px auto; padding: 40px;">
+              <i data-lucide="bar-chart-2" style="width: 48px; height: 48px; color: var(--primary); margin-bottom: 16px;"></i>
+              <h2 style="font-family: 'Outfit', sans-serif; margin-bottom: 12px;">Welcome to ChurnIntel</h2>
+              <p style="color: var(--text-muted); margin-bottom: 24px;">To get started with SaaS metrics and churn analysis, generate a demo customer database or upload your historical records in the Trainer tab.</p>
+              <button id="btn-welcome-load" class="btn btn-primary">
+                <i data-lucide="database" style="width: 16px; height: 16px;"></i>
+                Initialize Default Database
+              </button>
+            </div>
+          </div>
+
+          <!-- Active Dashboard View -->
+          <div id="overview-active-board">
+            
+            <!-- KPIs Grid -->
+            <div class="kpi-grid">
+              <div class="card" id="card-active-customers">
+                <div class="kpi-title">Active Customers</div>
+                <div class="kpi-value" id="kpi-customers">0</div>
+                <div class="kpi-delta delta-down" id="kpi-customers-delta">
+                  <i data-lucide="trending-up" style="width: 14px; height: 14px;"></i>
+                  <span>0.0% vs last month</span>
+                </div>
+              </div>
+              <div class="card" id="card-average-risk">
+                <div class="kpi-title">Average Churn Risk</div>
+                <div class="kpi-value" id="kpi-avg-risk">0.0%</div>
+                <div class="kpi-delta" id="kpi-risk-delta">
+                  <i data-lucide="trending-down" style="width: 14px; height: 14px;"></i>
+                  <span>0.0% vs last month</span>
+                </div>
+              </div>
+              <div class="card" id="card-mrr">
+                <div class="kpi-title">Monthly Recurring Revenue</div>
+                <div class="kpi-value" id="kpi-mrr">$0.00</div>
+                <div class="kpi-delta delta-down" id="kpi-mrr-delta">
+                  <i data-lucide="trending-up" style="width: 14px; height: 14px;"></i>
+                  <span>+$0.00 new subscriptions</span>
+                </div>
+              </div>
+              <div class="card" id="card-revenue-at-risk">
+                <div class="kpi-title">MRR Exposure (At Risk)</div>
+                <div class="kpi-value" id="kpi-revenue-risk">$0.00</div>
+                <div class="kpi-delta delta-up" id="kpi-rev-risk-delta">
+                  <span>0 accounts at high risk</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="analytics-grid">
+              <div class="card">
+                <h3 class="analytics-title">Churn Risk Segments</h3>
+                <div id="chart-risk-distribution" style="min-height: 250px;"></div>
+              </div>
+              <div class="card">
+                <h3 class="analytics-title">Revenue Exposure by Plan Tier & Risk</h3>
+                <div id="chart-revenue-exposure" style="min-height: 250px;"></div>
+              </div>
+            </div>
+
+            <div class="card" style="margin-bottom: 24px;">
+              <h3 class="analytics-title">Customer Health Matrix (Adoption vs Inactivity)</h3>
+              <div id="chart-health-matrix" style="min-height: 350px;"></div>
+            </div>
+
+            <!-- High Risk Directory -->
+            <div class="card">
+              <h3 class="analytics-title" style="display: flex; justify-content: space-between; align-items: center;">
+                <span>Highest Risk Customers (CS Outreach Queue)</span>
+                <span class="badge badge-high" style="font-size: 0.65rem;" id="outreach-queue-count">0 Accounts</span>
+              </h3>
+              <div class="table-container">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Customer Name</th>
+                      <th>Plan Tier</th>
+                      <th>MRR Value</th>
+                      <th>Days Inactive</th>
+                      <th>Tickets</th>
+                      <th>Churn Prob</th>
+                      <th>Outreach</th>
+                    </tr>
+                  </thead>
+                  <tbody id="overview-risk-table-body">
+                    <tr>
+                      <td colspan="8" style="text-align: center; padding: 30px; color: var(--text-muted);">No accounts flagged. Generate demo data.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ==================== TAB: INSPECTOR ==================== -->
+        <section id="panel-inspector" class="tab-panel">
+          <div class="inspector-split">
+            
+            <!-- Profile Column -->
+            <div class="inspector-pane">
+              <div class="input-group" style="margin-bottom: 20px;">
+                <label class="input-label" for="inspector-select">Search Customer Directory</label>
+                <select id="inspector-select" class="input-field">
+                  <option value="" disabled selected>Select a customer account...</option>
+                </select>
+              </div>
+
+              <!-- Selected Customer State -->
+              <div id="inspector-active-profile" style="display: none; flex-grow: 1; display: flex; flex-direction: column;">
+                
+                <!-- Profile Header -->
+                <div class="inspector-meta">
+                  <div>
+                    <h2 id="inspector-cust-name" style="font-family: 'Outfit', sans-serif;">Customer Name</h2>
+                    <code id="inspector-cust-id" style="font-size: 0.8rem; color: var(--primary);">CUST-0000</code>
+                  </div>
+                  <div id="inspector-risk-badge-slot">
+                    <span class="badge badge-low">Low Risk</span>
+                  </div>
+                </div>
+
+                <!-- Numerical metrics capsules -->
+                <div class="inspector-grid">
+                  <div class="metric-pill">
+                    <div class="metric-pill-label">Plan Tier</div>
+                    <div class="metric-pill-value" id="pill-plan">Basic</div>
+                  </div>
+                  <div class="metric-pill">
+                    <div class="metric-pill-label">MRR</div>
+                    <div class="metric-pill-value" id="pill-revenue">$0.00</div>
+                  </div>
+                  <div class="metric-pill">
+                    <div class="metric-pill-label">Months Active</div>
+                    <div class="metric-pill-value" id="pill-age">0</div>
+                  </div>
+                  <div class="metric-pill">
+                    <div class="metric-pill-label">Days Inactive</div>
+                    <div class="metric-pill-value" id="pill-inactive">0</div>
+                  </div>
+                </div>
+
+                <!-- Gauge and SHAP charts -->
+                <div style="display: flex; gap: 20px; flex-grow: 1; align-items: center;">
+                  <div style="width: 40%; text-align: center;">
+                    <div id="chart-inspector-gauge" style="min-height: 180px; margin: 0 auto;"></div>
+                    <div id="inspector-gauge-label" style="font-size: 1.25rem; font-weight: 700; margin-top: -10px;">0.0%</div>
+                  </div>
+                  <div style="width: 60%;">
+                    <h4 style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-bottom: 10px;">Explainable AI Local SHAP Values</h4>
+                    <div id="chart-inspector-shap" style="min-height: 220px;"></div>
+                  </div>
+                </div>
+
+              </div>
+              <div id="inspector-empty-state" style="margin: auto; text-align: center; color: var(--text-muted);">
+                <i data-lucide="user" style="width: 48px; height: 48px; margin-bottom: 12px; color: var(--border-color);"></i>
+                <p>Choose an account from the selector dropdown to review details.</p>
+              </div>
+            </div>
+
+            <!-- ChatGPT Advisor Panel -->
+            <div class="inspector-pane chat-pane">
+              <div class="chat-header">
+                <div style="background: var(--primary-light); color: var(--primary); padding: 8px; border-radius: 8px;">
+                  <i data-lucide="message-square" style="width: 20px; height: 20px;"></i>
+                </div>
+                <div>
+                  <h3 style="font-size: 1rem; font-weight: 600; line-height: 1.2;">Retention chat Assistant</h3>
+                  <p style="font-size: 0.75rem; color: var(--text-muted);">Ask ChatGPT how to rescue this account</p>
+                </div>
+              </div>
+
+              <!-- Chat messages window -->
+              <div class="chat-messages" id="chat-messages-container">
+                <div class="message assistant">
+                  <p>Select a customer account in the profile view to begin consulting about their retention strategy.</p>
+                </div>
+              </div>
+
+              <!-- Input Area -->
+              <div class="chat-input-area">
+                <input type="text" id="chat-user-input" class="chat-input" placeholder="Type a message or ask: 'Draft a re-engagement email'..." disabled>
+                <button id="chat-send-btn" class="btn btn-primary" disabled>
+                  <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ==================== TAB: BATCH PREDICT ==================== -->
+        <section id="panel-predict" class="tab-panel">
+          <div class="card" style="margin-bottom: 24px;">
+            <h3 class="analytics-title">Upload Active Customers CSV</h3>
+            
+            <div id="predict-upload-zone" class="upload-zone">
+              <i class="upload-icon" data-lucide="upload-cloud" style="width: 48px; height: 48px;"></i>
+              <h3 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 6px;">Click or drag CSV here to predict</h3>
+              <p style="color: var(--text-muted); font-size: 0.85rem;">Required fields: login_frequency, session_duration, feature_usage, support_tickets, subscription_age, plan_type, last_active_days, revenue</p>
+              <input type="file" id="predict-file-input" style="display: none;" accept=".csv">
+            </div>
+
+            <div id="predict-summary-view" style="display: none;">
+              <!-- Batch output KPIs -->
+              <div class="kpi-grid" style="margin-bottom: 24px;">
+                <div class="card" style="padding: 16px;">
+                  <div class="kpi-title" style="font-size: 0.7rem;">Batch size</div>
+                  <div class="kpi-value" style="font-size: 1.6rem;" id="kpi-batch-size">0</div>
+                </div>
+                <div class="card" style="padding: 16px;">
+                  <div class="kpi-title" style="font-size: 0.7rem;">Expected Batch Churn Rate</div>
+                  <div class="kpi-value" style="font-size: 1.6rem;" id="kpi-batch-churn">0.0%</div>
+                </div>
+                <div class="card" style="padding: 16px;">
+                  <div class="kpi-title" style="font-size: 0.7rem;">High Risk Accounts</div>
+                  <div class="kpi-value" style="font-size: 1.6rem;" id="kpi-batch-high">0</div>
+                </div>
+                <div class="card" style="padding: 16px;">
+                  <div class="kpi-title" style="font-size: 0.7rem;">Total Revenue at Risk</div>
+                  <div class="kpi-value" style="font-size: 1.6rem;" id="kpi-batch-rev">$0.00</div>
+                </div>
+              </div>
+
+              <!-- Action buttons -->
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                <h4 style="font-weight: 600;">Prediction Output Preview</h4>
+                <button id="btn-download-predictions" class="btn btn-primary">
+                  <i data-lucide="download" style="width: 16px; height: 16px;"></i>
+                  Export Churn Predictions CSV
+                </button>
+              </div>
+
+              <div class="table-container">
+                <table class="data-table" id="batch-results-table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Plan</th>
+                      <th>MRR</th>
+                      <th>Churn Prob</th>
+                      <th>Risk Level</th>
+                      <th>Top Churn Factors</th>
+                    </tr>
+                  </thead>
+                  <tbody id="batch-results-body">
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==================== TAB: TRAINER ==================== -->
+        <section id="panel-trainer" class="tab-panel">
+          <div class="analytics-grid">
+            
+            <!-- Upload Panel -->
+            <div class="card">
+              <h3 class="analytics-title">Upload Historical Labeled Data</h3>
+              <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 20px;">Upload historical records containing a binary <code>churn</code> label (1 for churned, 0 for retained) to retrain the XGBoost classifier model.</p>
+              
+              <div id="trainer-upload-zone" class="upload-zone" style="padding: 30px;">
+                <i class="upload-icon" data-lucide="sliders" style="width: 40px; height: 40px;"></i>
+                <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 4px;">Select or drop training CSV</h3>
+                <p style="color: var(--text-muted); font-size: 0.8rem;">Must include a <code>churn</code> column</p>
+                <input type="file" id="trainer-file-input" style="display: none;" accept=".csv">
+              </div>
+
+              <div id="trainer-stats-card" style="display: none;">
+                <h4 style="font-weight: 600; margin-bottom: 12px;">XGBoost Evaluation Metrics</h4>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px;">
+                  <div class="metric-pill">
+                    <div class="metric-pill-label">ROC-AUC</div>
+                    <div class="metric-pill-value" id="train-auc" style="font-size: 1.25rem;">0.000</div>
+                  </div>
+                  <div class="metric-pill">
+                    <div class="metric-pill-label">Accuracy</div>
+                    <div class="metric-pill-value" id="train-accuracy" style="font-size: 1.25rem;">0.0%</div>
+                  </div>
+                  <div class="metric-pill">
+                    <div class="metric-pill-label">F1-Score</div>
+                    <div class="metric-pill-value" id="train-f1" style="font-size: 1.25rem;">0.000</div>
+                  </div>
+                </div>
+                <div class="demo-banner">
+                  <span>Custom XGBoost model successfully serialized and loaded globally.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Global Feature Importance -->
+            <div class="card">
+              <h3 class="analytics-title">Global Feature Importance (SHAP)</h3>
+              <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 20px;">Aggregated impact of factors influencing the model's overall predictions across the entire database.</p>
+              <div id="chart-global-importance" style="min-height: 280px;"></div>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Javascript -->
+  <script src="cursor.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# Git Ignore for ChurnIntel
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+temp_test_data/
+.streamlit/
+.env
