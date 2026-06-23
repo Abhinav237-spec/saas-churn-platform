@@ -4,10 +4,10 @@ ChurnIntel is a modern SaaS Churn Intelligence Platform designed to allow SaaS f
 
 ## Key Features
 
-- **SaaS Health Dashboard**: An elegant, glassmorphic UI displaying global churn risks, MRR exposure, and a directory of your most at-risk customers.
+- **SaaS Health Dashboard**: An elegant, animated dark-green UI displaying global churn risks, MRR exposure, and a directory of your most at-risk customers, accented with vibrant orange data visualizations.
 - **Machine Learning Engine**: Powered by XGBoost, the engine trains on your historical data and accurately predicts customer churn probabilities.
 - **Explainable AI**: Integrated SHAP values explicitly show *why* a customer is at risk—whether it's declining feature usage, low login frequency, or too many support tickets.
-- **ChatGPT Retention Advisor**: Directly connect your ChatGPT account using your API key and interactively discuss tailored customer success playbooks for saving high-risk accounts.
+- **ChatGPT Retention Advisor**: Features a secure "Sign in with ChatGPT" OAuth-style modal to connect your account and interactively discuss tailored customer success playbooks directly in the dashboard.
 - **Batch Processing & Retraining**: Upload CSV data files to generate batch predictions, or upload historical labels to retrain the local XGBoost model on your unique metrics.
 
 ## Quick Start (Local Development)

@@ -74,10 +74,17 @@ function initNavigation() {
       btn.classList.add("active");
 
       // Update active panel
-      panels.forEach(p => p.classList.remove("active"));
-      document.getElementById(`panel-${tabId}`).classList.add("active");
+      panels.forEach(p => {
+    p.classList.remove("active");
+    if (p.id === `panel-${tabId}`) {
+      p.classList.add("active");
+    }
+  });
 
-      state.activeTab = tabId;
+  if (tabId === "overview") {
+    // We already fetch global data on start, no need to do heavy refresh here unless needed
+    // title.innerHTML = pageTitle;
+  }
       
       // Set Header title and sub, add typewriter animation on change
       let pageTitle = "SaaS Health Dashboard";
@@ -94,7 +101,7 @@ function initNavigation() {
         pageSub = "Re-train XGBoost model on historical datasets";
       }
 
-      title.innerHTML = `<span class="typewriter">${pageTitle}</span>`;
+      title.innerHTML = pageTitle;
       subtitle.innerText = pageSub;
       
       // Refresh charts if needed
@@ -159,8 +166,6 @@ async function fetchDataAndRenderDashboard() {
 
   try {
     // We generate-synthetic to populate default if empty, or just reload
-    // For convenience, we fetch global-importance to check, but since we want the actual rows:
-    // Let's call /generate-synthetic?count=1000 if not initialized
     const health = await (await fetch(`${API_BASE}/health`)).json();
     if (!health.model_loaded) {
       document.getElementById("overview-welcome-card").style.display = "block";
@@ -168,11 +173,11 @@ async function fetchDataAndRenderDashboard() {
       return;
     }
     
+    document.getElementById("overview-welcome-card").style.display = "none";
+    document.getElementById("overview-active-board").style.display = "block";
+
     // Model is loaded, let's get the synthetic records by calling a prediction on a generated batch
-    // (In main.py, predictions are run against data/synthetic_customers.csv internally during load)
-    // To get the data, we call predict on a newly generated/restored list.
-    // Let's fetch mock customer predictions:
-    const res = await fetch(`${API_BASE}/generate-synthetic?count=1000`); // Fetch 1000
+    const res = await fetch(`${API_BASE}/generate-synthetic?count=1000`, { method: "POST" }); // Fix GET to POST
     if (res.ok) {
       const data = await res.json();
       
@@ -519,26 +524,54 @@ function renderOutreachQueueTable() {
 function initEventHandlers() {
   // Demo data loading trigger
   const chatgptBtn = document.getElementById("btn-chatgpt-connect");
-  if (chatgptBtn) {
+  const oauthModal = document.getElementById("oauth-modal");
+  
+  if (chatgptBtn && oauthModal) {
     chatgptBtn.addEventListener("click", () => {
-      const key = prompt("Securely connect your ChatGPT account by providing your OpenAI API Key:");
+      oauthModal.style.display = "flex";
+    });
+    
+    document.getElementById("btn-oauth-cancel").addEventListener("click", () => {
+      oauthModal.style.display = "none";
+    });
+    
+    document.getElementById("btn-oauth-submit").addEventListener("click", () => {
+      const key = document.getElementById("oauth-api-key").value.trim();
       if (key) {
         state.chatgptToken = key;
         chatgptBtn.innerHTML = `<i data-lucide="check-circle" style="width: 16px; height: 16px; margin-right: 8px;"></i> ChatGPT Connected`;
         chatgptBtn.style.backgroundColor = "#047857";
         lucide.createIcons();
-        alert("Successfully signed into ChatGPT! You can now chat in the Customer Inspector.");
+        oauthModal.style.display = "none";
+        alert("Successfully authorized ChatGPT access!");
+      } else {
+        alert("Please enter a key to authorize.");
       }
     });
   }
 
-  document.getElementById("btn-generate-synthetic").addEventListener("click", () => {
-    fetchDataAndRenderDashboard();
-  });
-  
-  document.getElementById("btn-welcome-load").addEventListener("click", () => {
-    fetchDataAndRenderDashboard();
-  });
+  const loadDemoData = async () => {
+    const btn1 = document.getElementById("btn-generate-synthetic");
+    const btn2 = document.getElementById("btn-welcome-load");
+    if(btn1) btn1.innerHTML = `<i data-lucide="loader" style="width: 16px; height: 16px; animation: spin 2s linear infinite;"></i> Loading...`;
+    if(btn2) btn2.innerHTML = `<i data-lucide="loader" style="width: 16px; height: 16px; animation: spin 2s linear infinite;"></i> Initializing...`;
+    
+    try {
+      await fetch(`${API_BASE}/generate-synthetic?count=1000`, { method: "POST" });
+      document.getElementById("overview-welcome-card").style.display = "none";
+      document.getElementById("overview-active-board").style.display = "block";
+      await fetchDataAndRenderDashboard();
+    } catch (e) {
+      console.error(e);
+    } finally {
+      if(btn1) btn1.innerHTML = `<i data-lucide="database" style="width: 16px; height: 16px;"></i> Load Demo Data`;
+      if(btn2) btn2.innerHTML = `<i data-lucide="database" style="width: 16px; height: 16px;"></i> Initialize Default Database`;
+      lucide.createIcons();
+    }
+  };
+
+  document.getElementById("btn-generate-synthetic").addEventListener("click", loadDemoData);
+  document.getElementById("btn-welcome-load").addEventListener("click", loadDemoData);
   
   // Custom Selector Dropdown switch
   document.getElementById("inspector-select").addEventListener("change", (e) => {
@@ -1021,7 +1054,7 @@ function renderGlobalImportanceChart(importance) {
       name: 'Global SHAP Importance',
       data: sorted.map(item => item.value)
     }],
-    colors: ['#4f46e5'],
+    colors: ['#f97316'],
     plotOptions: {
       bar: {
         borderRadius: 4,
