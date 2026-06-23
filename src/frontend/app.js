@@ -518,6 +518,20 @@ function renderOutreachQueueTable() {
 // Set up event handlers
 function initEventHandlers() {
   // Demo data loading trigger
+  const chatgptBtn = document.getElementById("btn-chatgpt-connect");
+  if (chatgptBtn) {
+    chatgptBtn.addEventListener("click", () => {
+      const key = prompt("Securely connect your ChatGPT account by providing your OpenAI API Key:");
+      if (key) {
+        state.chatgptToken = key;
+        chatgptBtn.innerHTML = `<i data-lucide="check-circle" style="width: 16px; height: 16px; margin-right: 8px;"></i> ChatGPT Connected`;
+        chatgptBtn.style.backgroundColor = "#047857";
+        lucide.createIcons();
+        alert("Successfully signed into ChatGPT! You can now chat in the Customer Inspector.");
+      }
+    });
+  }
+
   document.getElementById("btn-generate-synthetic").addEventListener("click", () => {
     fetchDataAndRenderDashboard();
   });
@@ -771,7 +785,7 @@ function parseMarkdown(text) {
 async function sendChatMessage() {
   const inputEl = document.getElementById("chat-user-input");
   const userText = inputEl.value.trim();
-  const apiKey = document.getElementById("openai-key").value.trim();
+  const apiKey = state.chatgptToken || null;
   
   if (!userText || !state.activeCustomerId) return;
   
