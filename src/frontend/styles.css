@@ -5,11 +5,11 @@
   --primary: #f97316;
   --primary-hover: #ea580c;
   --primary-light: rgba(249, 115, 22, 0.15);
-  --bg-main: #011812;
-  --bg-card: #032b21;
+  --bg-main: #012b17;
+  --bg-card: #044225;
   --text-main: #f8fafc;
-  --text-muted: #cbd5e1;
-  --border-color: #044333;
+  --text-muted: #d1d5db;
+  --border-color: #0b663b;
   --border-focus: #10b981;
   --success: #34d399;
   --success-light: rgba(52, 211, 153, 0.15);
@@ -71,7 +71,7 @@ body {
 .cursor-hover {
   width: 44px;
   height: 44px;
-  background-color: rgba(79, 70, 229, 0.06);
+  background-color: rgba(249, 115, 22, 0.06);
   border-color: var(--primary-hover);
   transform: translate(-10px, -10px); /* Adjust centered hover outline */
 }
@@ -104,14 +104,14 @@ body {
 }
 
 .brand-logo {
-  background: linear-gradient(135deg, var(--primary), #8b5cf6);
+  background: linear-gradient(135deg, var(--primary), #d97706);
   width: 38px;
   height: 38px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25);
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.25);
   color: #fff;
 }
 
@@ -120,9 +120,7 @@ body {
   font-size: 1.35rem;
   font-weight: 800;
   letter-spacing: -0.03em;
-  background: linear-gradient(to right, #0f172a, #334155);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #f8fafc;
 }
 
 .nav-menu {
@@ -200,8 +198,8 @@ body {
 
 .input-field:focus {
   border-color: var(--primary);
-  background: var(--bg-card);
-  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+  background: var(--bg-main);
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
 }
 
 /* Main Content Area */

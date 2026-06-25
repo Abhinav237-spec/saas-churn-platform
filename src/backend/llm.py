@@ -64,24 +64,18 @@ Structure your playbook with the following exact headers:
 4. ### Tailored Incentives & Plan Optimization
 """
             completion = client.chat.completions.create(
-                model="gpt-4o-mini",
+                model="meta/llama-3.1-8b-instruct",
                 messages=[
-                    {
-                        "role": "system", 
-                        "content": "You are a professional SaaS customer success consulting agent. Speak directly to customer success managers. Keep advice tactical, specific, and metric-driven."
-                    },
-                    {
-                        "role": "user", 
-                        "content": prompt
-                    }
+                    {"role": "system", "content": "You are a customer success AI expert. Analyze the customer data and generate a clear, actionable retention playbook."},
+                    {"role": "user", "content": prompt}
                 ],
-                temperature=0.2,
-                max_tokens=1024
+                temperature=0.5,
+                max_tokens=800
             )
             return completion.choices[0].message.content
         except Exception as e:
-            print(f"Exception contacting OpenAI API: {e}")
-            return f"### ⚠️ OpenAI API Error\nFailed to generate a custom playbook. Please check if your API key is valid and has sufficient quota. \n\n*Error details: {str(e)}*"
+            print(f"Exception contacting NVIDIA NIM API: {e}")
+            return f"### ⚠️ NVIDIA NIM API Error\nFailed to generate a custom playbook. Please check if your API key is valid and has sufficient quota. \n\n*Error details: {str(e)}*"
             
     # --- RULES-BASED FALLBACK PLAYBOOK ---
     return _generate_fallback_playbook(customer, prediction)
@@ -139,7 +133,10 @@ Be friendly, professional, analytical, and highly tactical. Always refer to the 
     if api_key and api_key.strip():
         try:
             from openai import OpenAI
-            client = OpenAI(api_key=api_key)
+            client = OpenAI(
+                base_url="https://integrate.api.nvidia.com/v1",
+                api_key=api_key
+            )
             
             # Combine system prompt with message history
             openai_messages = [{"role": "system", "content": system_prompt}]
@@ -151,15 +148,15 @@ Be friendly, professional, analytical, and highly tactical. Always refer to the 
                 })
                 
             completion = client.chat.completions.create(
-                model="gpt-4o-mini",
+                model="meta/llama-3.1-8b-instruct",
                 messages=openai_messages,
                 temperature=0.5,
                 max_tokens=800
             )
             return completion.choices[0].message.content
         except Exception as e:
-            print(f"Exception calling OpenAI Chat: {e}")
-            return f"⚠️ **OpenAI API Error**: Failed to generate a response. Please check if your API key is valid and has sufficient quota. \n\n*Error details: {str(e)}*"
+            print(f"Exception calling NVIDIA NIM Chat: {e}")
+            return f"⚠️ **NVIDIA NIM API Error**: Failed to generate a response. Please check if your API key is valid and has sufficient quota. \n\n*Error details: {str(e)}*"
             
     # --- CONTEXT-AWARE MOCK CHATBOT FALLBACK ---
     return _generate_fallback_chat_reply(customer, prediction, messages)

@@ -530,10 +530,10 @@ function initEventHandlers() {
     chatgptBtn.addEventListener("click", () => {
       if (state.chatgptToken) {
         // Disconnect logic
-        if (confirm("Disconnect ChatGPT?")) {
+        if (confirm("Disconnect NVIDIA NIM API?")) {
           state.chatgptToken = null;
-          chatgptBtn.innerHTML = `<i data-lucide="lock" style="width: 16px; height: 16px; margin-right: 8px;"></i> Sign in with ChatGPT`;
-          chatgptBtn.style.backgroundColor = "#10a37f";
+          chatgptBtn.innerHTML = `<i data-lucide="lock" style="width: 16px; height: 16px; margin-right: 8px;"></i> Sign in with NIM API`;
+          chatgptBtn.style.backgroundColor = "#0b663b";
           lucide.createIcons();
         }
       } else {
@@ -549,8 +549,8 @@ function initEventHandlers() {
       const key = document.getElementById("oauth-api-key").value.trim();
       if (key) {
         state.chatgptToken = key;
-        chatgptBtn.innerHTML = `<i data-lucide="check-circle" style="width: 16px; height: 16px; margin-right: 8px;"></i> ChatGPT Connected`;
-        chatgptBtn.style.backgroundColor = "#047857";
+        chatgptBtn.innerHTML = `<i data-lucide="check-circle" style="width: 16px; height: 16px; margin-right: 8px;"></i> NIM Connected`;
+        chatgptBtn.style.backgroundColor = "#044225";
         lucide.createIcons();
         oauthModal.style.display = "none";
         // Optionally clear input
