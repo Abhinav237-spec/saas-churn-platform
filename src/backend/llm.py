@@ -81,6 +81,7 @@ Structure your playbook with the following exact headers:
             return completion.choices[0].message.content
         except Exception as e:
             print(f"Exception contacting OpenAI API: {e}")
+            return f"### ⚠️ OpenAI API Error\nFailed to generate a custom playbook. Please check if your API key is valid and has sufficient quota. \n\n*Error details: {str(e)}*"
             
     # --- RULES-BASED FALLBACK PLAYBOOK ---
     return _generate_fallback_playbook(customer, prediction)
@@ -158,6 +159,7 @@ Be friendly, professional, analytical, and highly tactical. Always refer to the 
             return completion.choices[0].message.content
         except Exception as e:
             print(f"Exception calling OpenAI Chat: {e}")
+            return f"⚠️ **OpenAI API Error**: Failed to generate a response. Please check if your API key is valid and has sufficient quota. \n\n*Error details: {str(e)}*"
             
     # --- CONTEXT-AWARE MOCK CHATBOT FALLBACK ---
     return _generate_fallback_chat_reply(customer, prediction, messages)

@@ -528,7 +528,17 @@ function initEventHandlers() {
   
   if (chatgptBtn && oauthModal) {
     chatgptBtn.addEventListener("click", () => {
-      oauthModal.style.display = "flex";
+      if (state.chatgptToken) {
+        // Disconnect logic
+        if (confirm("Disconnect ChatGPT?")) {
+          state.chatgptToken = null;
+          chatgptBtn.innerHTML = `<i data-lucide="lock" style="width: 16px; height: 16px; margin-right: 8px;"></i> Sign in with ChatGPT`;
+          chatgptBtn.style.backgroundColor = "#10a37f";
+          lucide.createIcons();
+        }
+      } else {
+        oauthModal.style.display = "flex";
+      }
     });
     
     document.getElementById("btn-oauth-cancel").addEventListener("click", () => {
@@ -543,9 +553,8 @@ function initEventHandlers() {
         chatgptBtn.style.backgroundColor = "#047857";
         lucide.createIcons();
         oauthModal.style.display = "none";
-        alert("Successfully authorized ChatGPT access!");
-      } else {
-        alert("Please enter a key to authorize.");
+        // Optionally clear input
+        document.getElementById("oauth-api-key").value = "";
       }
     });
   }
