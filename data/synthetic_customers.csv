@@ -1,101 +1,1001 @@
 customer_id,name,login_frequency,session_duration,feature_usage,support_tickets,subscription_age,plan_type,last_active_days,revenue,churn
-CUST-1000,Soylent Corp #100,15,60,78,6,26,Pro,13,125.02,0
-CUST-1001,Vandelay Industries #101,6,42,79,6,48,Pro,20,150.52,1
-CUST-1002,Oscorp #102,19,46,66,0,57,Enterprise,5,744.59,0
-CUST-1003,Aperture Science #103,13,50,65,2,52,Basic,2,48.93,0
-CUST-1004,Reynholm Industries #104,5,53,90,5,60,Basic,27,46.95,0
-CUST-1005,Soylent Corp #105,6,38,78,1,49,Pro,8,145.34,0
-CUST-1006,Gekko & Co #106,9,48,50,0,2,Pro,4,161.29,0
-CUST-1007,Aperture Science #107,10,32,57,0,1,Pro,23,173.79,0
-CUST-1008,Aperture Science #108,1,38,64,4,48,Pro,28,102.49,0
-CUST-1009,Umbrella Corp #109,1,10,70,6,12,Basic,16,46.9,1
-CUST-1010,Reynholm Industries #110,6,46,75,2,5,Pro,13,185.01,0
-CUST-1011,Initech #111,13,53,64,6,37,Basic,20,38.15,0
-CUST-1012,Globex #112,14,31,58,9,32,Basic,30,36.82,1
-CUST-1013,Bluth Company #113,11,68,45,2,59,Basic,2,34.46,0
-CUST-1014,Vehement Capital #114,1,29,69,2,55,Basic,27,38.53,0
-CUST-1015,Globex #115,13,83,91,1,9,Pro,0,103.44,0
-CUST-1016,Acme Corp #116,10,72,94,4,41,Basic,19,46.04,1
-CUST-1017,Bluth Company #117,8,32,53,8,35,Pro,30,102.54,1
-CUST-1018,Bluth Company #118,17,52,67,4,19,Enterprise,28,663.53,0
-CUST-1019,Dunder Mifflin #119,10,32,48,4,48,Basic,20,47.63,0
-CUST-1020,Cyberdyne Systems #120,16,38,41,4,16,Basic,22,43.7,0
-CUST-1021,Tyrell Corp #121,12,47,54,3,3,Pro,0,127.14,0
-CUST-1022,Oscorp #122,14,79,52,3,20,Basic,2,34.05,0
-CUST-1023,Oscorp #123,6,13,60,4,24,Basic,17,29.1,1
-CUST-1024,Gekko & Co #124,4,50,32,2,54,Basic,24,42.91,1
-CUST-1025,Bluth Company #125,10,61,100,1,56,Basic,9,29.98,0
-CUST-1026,Vandelay Industries #126,4,46,36,3,33,Enterprise,30,765.3,1
-CUST-1027,Initech #127,5,50,87,2,24,Pro,21,195.21,1
-CUST-1028,Hooli #128,4,21,36,1,52,Pro,25,109.95,0
-CUST-1029,Gekko & Co #129,19,79,87,2,11,Enterprise,2,946.24,0
-CUST-1030,Soylent Corp #130,23,67,62,1,49,Pro,7,198.15,0
-CUST-1031,Massive Dynamic #131,8,9,69,2,8,Basic,13,30.23,0
-CUST-1032,Soylent Corp #132,6,42,61,3,36,Enterprise,23,940.45,0
-CUST-1033,Prestige Worldwide #133,12,41,76,4,38,Pro,17,150.61,1
-CUST-1034,Umbrella Corp #134,26,102,92,6,40,Pro,14,189.65,0
-CUST-1035,Wayne Enterprises #135,9,43,66,2,20,Enterprise,21,784.66,1
-CUST-1036,Prestige Worldwide #136,13,56,77,2,35,Basic,22,42.24,1
-CUST-1037,Massive Dynamic #137,22,79,71,2,48,Basic,1,39.88,0
-CUST-1038,Globex #138,7,39,40,4,25,Basic,30,46.29,1
-CUST-1039,Vandelay Industries #139,11,50,45,4,35,Basic,26,43.68,1
-CUST-1040,Oscorp #140,15,72,76,2,25,Pro,9,151.13,0
-CUST-1041,Soylent Corp #141,19,52,58,2,29,Enterprise,1,933.08,0
-CUST-1042,Bluth Company #142,2,23,19,6,18,Basic,25,33.91,1
-CUST-1043,Reynholm Industries #143,11,37,66,4,46,Pro,16,114.73,0
-CUST-1044,Oscorp #144,15,81,62,1,18,Basic,7,32.21,0
-CUST-1045,Initech #145,17,53,49,1,2,Basic,0,35.68,0
-CUST-1046,Wayne Enterprises #146,18,63,70,7,54,Basic,8,33.77,1
-CUST-1047,Dunder Mifflin #147,14,48,50,1,35,Basic,10,47.6,0
-CUST-1048,Umbrella Corp #148,2,29,56,6,16,Enterprise,21,551.92,1
-CUST-1049,Prestige Worldwide #149,13,44,91,6,41,Basic,15,42.98,1
-CUST-1050,Reynholm Industries #150,8,52,60,2,36,Pro,6,117.92,0
-CUST-1051,Umbrella Corp #151,3,20,34,8,33,Pro,28,187.16,1
-CUST-1052,Globex #152,10,29,57,3,4,Basic,9,48.23,1
-CUST-1053,Vehement Capital #153,7,35,45,5,33,Enterprise,22,731.74,1
-CUST-1054,Cyberdyne Systems #154,1,20,50,6,14,Enterprise,25,938.54,1
-CUST-1055,Umbrella Corp #155,19,47,68,3,21,Basic,2,29.1,0
-CUST-1056,Prestige Worldwide #156,4,33,55,3,48,Basic,17,45.4,1
-CUST-1057,Bluth Company #157,15,35,58,6,20,Basic,24,33.57,0
-CUST-1058,Globex #158,2,59,72,2,56,Basic,23,47.17,1
-CUST-1059,Cyberdyne Systems #159,17,41,84,2,8,Basic,12,29.02,0
-CUST-1060,Umbrella Corp #160,6,32,52,2,7,Pro,27,154.62,1
-CUST-1061,Wayne Enterprises #161,1,25,54,6,3,Pro,25,174.66,1
-CUST-1062,Tyrell Corp #162,7,69,87,2,17,Basic,6,34.17,0
-CUST-1063,Oscorp #163,14,32,63,2,33,Basic,24,32.86,0
-CUST-1064,Reynholm Industries #164,16,64,66,1,48,Enterprise,3,541.05,0
-CUST-1065,Wayne Enterprises #165,11,67,87,6,12,Basic,12,35.53,0
-CUST-1066,Reynholm Industries #166,1,27,40,3,59,Basic,19,40.2,0
-CUST-1067,Tyrell Corp #167,21,54,63,1,51,Basic,0,31.32,0
-CUST-1068,Stark Industries #168,22,72,64,3,22,Enterprise,7,687.35,0
-CUST-1069,Prestige Worldwide #169,19,90,93,3,55,Basic,13,29.18,0
-CUST-1070,Oscorp #170,7,34,74,4,22,Pro,15,180.87,1
-CUST-1071,Stark Industries #171,13,77,81,1,46,Pro,13,111.84,0
-CUST-1072,Massive Dynamic #172,14,61,71,1,30,Basic,11,34.67,0
-CUST-1073,Oscorp #173,1,50,51,1,38,Pro,18,100.84,1
-CUST-1074,Stark Industries #174,9,51,54,5,38,Basic,22,37.64,1
-CUST-1075,Acme Corp #175,16,54,49,10,45,Pro,14,183.01,1
-CUST-1076,Soylent Corp #176,10,74,44,4,51,Pro,27,138.22,1
-CUST-1077,Massive Dynamic #177,9,51,59,1,54,Pro,1,116.95,0
-CUST-1078,Acme Corp #178,10,52,61,0,8,Basic,1,44.07,0
-CUST-1079,Bluth Company #179,12,66,100,2,27,Pro,22,177.88,1
-CUST-1080,Reynholm Industries #180,9,61,93,4,27,Basic,30,32.48,1
-CUST-1081,Aperture Science #181,1,44,70,5,34,Basic,21,44.42,0
-CUST-1082,Gekko & Co #182,1,11,76,6,21,Basic,18,47.95,1
-CUST-1083,Dunder Mifflin #183,7,34,77,6,30,Pro,24,115.64,0
-CUST-1084,Reynholm Industries #184,4,28,23,1,33,Pro,25,176.1,1
-CUST-1085,Initech #185,4,26,69,3,28,Basic,30,43.17,1
-CUST-1086,Initech #186,4,24,62,0,47,Pro,29,146.36,0
-CUST-1087,Acme Corp #187,11,41,56,1,33,Basic,28,30.16,1
-CUST-1088,Hooli #188,9,53,45,1,5,Pro,21,106.47,0
-CUST-1089,Cyberdyne Systems #189,8,53,75,3,60,Basic,25,46.05,0
-CUST-1090,Soylent Corp #190,1,31,24,3,48,Pro,25,198.01,1
-CUST-1091,Massive Dynamic #191,1,25,52,5,19,Basic,21,42.52,1
-CUST-1092,Soylent Corp #192,15,79,70,1,4,Enterprise,16,721.98,0
-CUST-1093,Massive Dynamic #193,20,68,55,2,35,Basic,19,41.95,1
-CUST-1094,Reynholm Industries #194,10,64,89,6,49,Basic,9,40.89,0
-CUST-1095,Bluth Company #195,14,49,63,3,17,Basic,5,36.67,0
-CUST-1096,Globex #196,12,60,72,4,44,Enterprise,14,531.81,0
-CUST-1097,Acme Corp #197,17,84,95,1,28,Enterprise,21,909.76,0
-CUST-1098,Tyrell Corp #198,16,22,50,0,30,Basic,10,36.44,0
-CUST-1099,Hooli #199,9,38,65,7,29,Pro,27,180.88,0
+CUST-1000,Soylent Corp #100,7,57,63,4,50,Basic,10,33.49,0
+CUST-1001,Vandelay Industries #101,9,58,65,0,10,Basic,0,45.22,0
+CUST-1002,Oscorp #102,6,55,63,6,21,Enterprise,22,938.26,1
+CUST-1003,Aperture Science #103,11,44,65,5,36,Pro,12,106.15,1
+CUST-1004,Reynholm Industries #104,3,55,68,3,12,Basic,14,29.65,1
+CUST-1005,Soylent Corp #105,14,85,85,5,27,Enterprise,25,871.28,1
+CUST-1006,Gekko & Co #106,17,76,100,3,40,Basic,4,31.67,0
+CUST-1007,Aperture Science #107,7,31,56,4,2,Pro,20,112.3,1
+CUST-1008,Aperture Science #108,1,19,82,2,54,Basic,29,29.45,1
+CUST-1009,Umbrella Corp #109,9,42,66,0,13,Basic,16,30.0,0
+CUST-1010,Reynholm Industries #110,10,41,53,5,53,Basic,30,34.27,1
+CUST-1011,Initech #111,9,46,83,4,32,Pro,30,105.5,1
+CUST-1012,Globex #112,13,65,71,1,31,Basic,24,36.38,0
+CUST-1013,Bluth Company #113,5,44,26,3,16,Basic,22,45.66,1
+CUST-1014,Vehement Capital #114,1,35,57,4,32,Basic,23,35.53,1
+CUST-1015,Globex #115,14,54,63,2,32,Pro,24,171.78,1
+CUST-1016,Acme Corp #116,12,52,90,3,60,Enterprise,5,545.95,0
+CUST-1017,Bluth Company #117,10,61,57,0,34,Basic,27,42.19,1
+CUST-1018,Bluth Company #118,17,33,51,4,11,Pro,20,130.67,1
+CUST-1019,Dunder Mifflin #119,20,69,93,5,10,Enterprise,21,873.88,0
+CUST-1020,Cyberdyne Systems #120,8,50,70,7,15,Pro,10,112.63,0
+CUST-1021,Tyrell Corp #121,10,61,67,4,17,Basic,17,46.96,1
+CUST-1022,Oscorp #122,20,54,55,1,40,Basic,3,33.85,0
+CUST-1023,Oscorp #123,10,34,62,1,18,Basic,2,36.06,0
+CUST-1024,Gekko & Co #124,8,54,66,2,55,Basic,12,48.0,0
+CUST-1025,Bluth Company #125,5,11,33,6,9,Basic,22,40.57,1
+CUST-1026,Vandelay Industries #126,12,73,65,2,25,Pro,8,135.58,0
+CUST-1027,Initech #127,7,47,51,3,40,Basic,20,47.99,1
+CUST-1028,Hooli #128,10,73,61,2,59,Basic,5,35.58,0
+CUST-1029,Gekko & Co #129,2,17,62,4,14,Pro,25,108.49,1
+CUST-1030,Soylent Corp #130,10,43,73,6,60,Basic,29,48.94,1
+CUST-1031,Massive Dynamic #131,13,19,63,3,58,Pro,27,125.78,1
+CUST-1032,Soylent Corp #132,19,56,68,2,25,Pro,11,184.13,0
+CUST-1033,Prestige Worldwide #133,12,51,61,0,50,Basic,1,32.31,0
+CUST-1034,Umbrella Corp #134,18,36,54,2,22,Pro,2,172.14,0
+CUST-1035,Wayne Enterprises #135,15,54,82,5,52,Pro,2,151.44,0
+CUST-1036,Prestige Worldwide #136,4,8,16,2,30,Pro,27,197.09,1
+CUST-1037,Massive Dynamic #137,15,56,60,3,20,Basic,11,40.06,1
+CUST-1038,Globex #138,7,61,57,8,21,Basic,14,29.5,1
+CUST-1039,Vandelay Industries #139,10,49,84,0,44,Pro,8,159.39,0
+CUST-1040,Oscorp #140,1,56,60,5,32,Basic,30,31.91,1
+CUST-1041,Soylent Corp #141,6,53,41,4,51,Basic,22,44.97,0
+CUST-1042,Bluth Company #142,14,78,82,3,46,Basic,7,46.13,0
+CUST-1043,Reynholm Industries #143,19,56,62,4,49,Pro,10,147.21,0
+CUST-1044,Oscorp #144,8,34,48,4,56,Basic,15,44.66,0
+CUST-1045,Initech #145,2,39,49,3,21,Enterprise,25,571.56,0
+CUST-1046,Wayne Enterprises #146,14,34,46,7,35,Pro,26,148.21,0
+CUST-1047,Dunder Mifflin #147,5,47,74,3,58,Pro,24,138.39,0
+CUST-1048,Umbrella Corp #148,1,27,56,2,32,Enterprise,21,804.66,0
+CUST-1049,Prestige Worldwide #149,14,77,75,2,30,Pro,3,103.45,0
+CUST-1050,Reynholm Industries #150,5,50,48,3,55,Enterprise,27,875.06,1
+CUST-1051,Umbrella Corp #151,26,98,86,2,39,Basic,0,30.58,0
+CUST-1052,Globex #152,10,38,62,0,49,Pro,23,164.65,1
+CUST-1053,Vehement Capital #153,12,69,78,0,12,Basic,6,29.37,0
+CUST-1054,Cyberdyne Systems #154,10,71,77,2,41,Basic,1,45.64,0
+CUST-1055,Umbrella Corp #155,9,47,49,5,47,Pro,23,116.47,1
+CUST-1056,Prestige Worldwide #156,14,46,26,5,18,Pro,27,150.55,1
+CUST-1057,Bluth Company #157,15,49,91,3,21,Basic,4,34.23,0
+CUST-1058,Globex #158,8,64,52,4,13,Pro,6,171.26,1
+CUST-1059,Cyberdyne Systems #159,16,102,61,2,21,Enterprise,3,659.68,0
+CUST-1060,Umbrella Corp #160,13,41,62,1,8,Pro,4,171.46,0
+CUST-1061,Wayne Enterprises #161,10,34,31,3,46,Pro,23,127.49,1
+CUST-1062,Tyrell Corp #162,13,69,62,3,40,Pro,0,174.25,0
+CUST-1063,Oscorp #163,13,44,70,2,46,Enterprise,0,514.3,0
+CUST-1064,Reynholm Industries #164,8,61,97,5,7,Pro,14,127.33,1
+CUST-1065,Wayne Enterprises #165,14,64,77,4,23,Pro,19,148.86,1
+CUST-1066,Reynholm Industries #166,7,43,54,1,44,Enterprise,18,521.53,0
+CUST-1067,Tyrell Corp #167,4,44,61,2,32,Enterprise,28,592.02,1
+CUST-1068,Stark Industries #168,7,49,37,3,11,Basic,9,47.69,1
+CUST-1069,Prestige Worldwide #169,9,45,55,0,22,Basic,27,48.54,0
+CUST-1070,Oscorp #170,11,25,45,1,22,Basic,17,43.79,0
+CUST-1071,Stark Industries #171,4,40,62,7,43,Basic,27,34.04,1
+CUST-1072,Massive Dynamic #172,10,73,100,3,25,Pro,2,125.05,0
+CUST-1073,Oscorp #173,21,47,34,2,22,Pro,10,163.58,0
+CUST-1074,Stark Industries #174,1,17,42,8,28,Pro,14,110.76,1
+CUST-1075,Acme Corp #175,8,52,38,1,29,Basic,30,47.97,0
+CUST-1076,Soylent Corp #176,13,56,60,4,13,Enterprise,26,611.41,0
+CUST-1077,Massive Dynamic #177,1,38,46,3,18,Pro,29,198.96,1
+CUST-1078,Acme Corp #178,15,49,42,3,2,Pro,10,148.57,0
+CUST-1079,Bluth Company #179,9,65,86,2,29,Enterprise,16,884.71,0
+CUST-1080,Reynholm Industries #180,11,52,69,6,21,Pro,16,99.22,1
+CUST-1081,Aperture Science #181,11,62,82,3,15,Basic,5,46.77,1
+CUST-1082,Gekko & Co #182,19,72,68,2,52,Pro,4,126.0,0
+CUST-1083,Dunder Mifflin #183,14,60,68,2,27,Basic,7,42.36,0
+CUST-1084,Reynholm Industries #184,15,69,98,1,50,Basic,1,45.13,0
+CUST-1085,Initech #185,6,44,61,3,31,Pro,15,115.41,1
+CUST-1086,Initech #186,18,48,76,0,15,Basic,19,37.85,0
+CUST-1087,Acme Corp #187,8,62,61,3,51,Pro,23,148.38,1
+CUST-1088,Hooli #188,23,88,94,0,23,Basic,11,35.24,0
+CUST-1089,Cyberdyne Systems #189,23,44,53,1,24,Enterprise,5,739.88,0
+CUST-1090,Soylent Corp #190,6,32,27,1,44,Basic,0,35.35,0
+CUST-1091,Massive Dynamic #191,2,49,64,5,13,Enterprise,30,679.37,1
+CUST-1092,Soylent Corp #192,8,18,41,2,22,Pro,3,165.93,1
+CUST-1093,Massive Dynamic #193,9,62,46,0,43,Basic,16,41.65,0
+CUST-1094,Reynholm Industries #194,12,51,68,3,37,Pro,12,122.23,0
+CUST-1095,Bluth Company #195,11,72,62,5,33,Enterprise,17,947.74,0
+CUST-1096,Globex #196,19,67,100,2,56,Basic,4,46.26,0
+CUST-1097,Acme Corp #197,13,45,40,5,3,Basic,29,39.18,1
+CUST-1098,Tyrell Corp #198,12,58,50,4,54,Basic,23,37.67,0
+CUST-1099,Hooli #199,5,39,72,5,19,Pro,23,136.69,1
+CUST-1100,Initech #200,3,23,49,0,23,Pro,26,169.73,0
+CUST-1101,Bluth Company #201,14,91,98,1,29,Pro,2,166.17,0
+CUST-1102,Reynholm Industries #202,14,43,67,3,30,Basic,10,32.92,0
+CUST-1103,Initech #203,10,16,39,3,39,Basic,12,42.43,0
+CUST-1104,Acme Corp #204,7,67,52,0,44,Pro,3,124.24,0
+CUST-1105,Initech #205,10,41,76,3,47,Basic,25,29.37,0
+CUST-1106,Hooli #206,5,35,38,3,25,Basic,26,42.98,0
+CUST-1107,Oscorp #207,8,40,68,2,37,Enterprise,13,821.4,0
+CUST-1108,Wayne Enterprises #208,8,37,72,1,47,Pro,21,140.08,0
+CUST-1109,Initech #209,10,38,57,3,8,Pro,10,151.57,0
+CUST-1110,Acme Corp #210,5,25,47,4,42,Pro,26,193.72,1
+CUST-1111,Hooli #211,5,40,45,2,58,Pro,9,158.52,0
+CUST-1112,Wayne Enterprises #212,9,41,67,6,16,Pro,18,164.79,1
+CUST-1113,Soylent Corp #213,13,66,27,5,8,Basic,17,30.28,1
+CUST-1114,Massive Dynamic #214,14,65,83,1,1,Basic,5,32.32,0
+CUST-1115,Oscorp #215,11,38,60,4,44,Basic,26,35.02,1
+CUST-1116,Oscorp #216,2,35,54,0,5,Basic,28,39.79,1
+CUST-1117,Cyberdyne Systems #217,4,31,59,3,3,Pro,14,176.66,0
+CUST-1118,Stark Industries #218,7,29,33,3,1,Basic,20,35.42,1
+CUST-1119,Gekko & Co #219,3,46,26,2,4,Basic,29,36.13,1
+CUST-1120,Soylent Corp #220,9,46,70,5,40,Basic,9,34.12,0
+CUST-1121,Dunder Mifflin #221,14,51,85,3,35,Basic,4,34.09,0
+CUST-1122,Vandelay Industries #222,4,25,26,4,32,Pro,25,193.89,1
+CUST-1123,Umbrella Corp #223,1,16,32,5,42,Basic,28,41.71,1
+CUST-1124,Hooli #224,11,81,91,2,34,Pro,4,114.59,0
+CUST-1125,Soylent Corp #225,14,63,76,3,43,Basic,9,43.44,0
+CUST-1126,Stark Industries #226,10,33,100,3,25,Pro,27,171.2,0
+CUST-1127,Oscorp #227,17,68,90,3,10,Pro,4,165.65,0
+CUST-1128,Aperture Science #228,16,77,91,1,21,Basic,2,31.69,0
+CUST-1129,Umbrella Corp #229,7,46,51,6,46,Pro,22,139.8,1
+CUST-1130,Stark Industries #230,15,80,87,0,39,Basic,5,31.14,0
+CUST-1131,Soylent Corp #231,13,32,78,3,27,Basic,3,45.33,0
+CUST-1132,Gekko & Co #232,10,20,47,3,27,Enterprise,17,826.59,0
+CUST-1133,Globex #233,2,37,56,4,2,Basic,27,39.14,1
+CUST-1134,Cyberdyne Systems #234,12,58,71,2,41,Basic,8,35.86,0
+CUST-1135,Stark Industries #235,12,5,32,5,48,Pro,16,117.42,1
+CUST-1136,Vehement Capital #236,8,36,62,5,13,Basic,28,31.13,1
+CUST-1137,Bluth Company #237,4,22,54,3,9,Pro,12,195.92,1
+CUST-1138,Bluth Company #238,7,23,73,6,52,Basic,26,32.99,1
+CUST-1139,Vandelay Industries #239,3,20,47,2,36,Enterprise,14,528.94,0
+CUST-1140,Aperture Science #240,7,52,76,1,22,Pro,29,195.17,0
+CUST-1141,Soylent Corp #241,5,24,49,5,42,Pro,19,153.9,0
+CUST-1142,Acme Corp #242,18,51,75,5,26,Enterprise,16,897.33,0
+CUST-1143,Acme Corp #243,11,27,49,4,58,Basic,12,29.88,0
+CUST-1144,Vandelay Industries #244,14,77,87,5,54,Enterprise,15,782.47,0
+CUST-1145,Stark Industries #245,19,74,87,3,12,Basic,21,36.96,0
+CUST-1146,Massive Dynamic #246,10,12,30,2,17,Basic,3,44.44,0
+CUST-1147,Initech #247,15,45,79,1,14,Basic,4,29.77,0
+CUST-1148,Soylent Corp #248,7,51,63,4,14,Pro,4,139.17,0
+CUST-1149,Vehement Capital #249,14,77,71,6,57,Basic,8,44.98,0
+CUST-1150,Reynholm Industries #250,19,80,69,2,34,Pro,16,151.27,0
+CUST-1151,Massive Dynamic #251,8,40,64,0,53,Pro,12,154.0,0
+CUST-1152,Hooli #252,10,21,50,1,57,Enterprise,1,547.58,0
+CUST-1153,Acme Corp #253,10,63,77,2,20,Basic,12,31.65,0
+CUST-1154,Gekko & Co #254,18,61,76,1,11,Pro,21,166.7,1
+CUST-1155,Cyberdyne Systems #255,12,55,76,2,16,Basic,20,42.5,0
+CUST-1156,Bluth Company #256,2,31,97,4,51,Basic,26,48.58,0
+CUST-1157,Oscorp #257,15,39,60,10,31,Basic,22,43.24,1
+CUST-1158,Massive Dynamic #258,1,37,47,8,55,Basic,18,38.86,1
+CUST-1159,Vandelay Industries #259,25,83,51,2,6,Pro,2,184.73,0
+CUST-1160,Dunder Mifflin #260,16,55,49,2,56,Pro,9,109.45,0
+CUST-1161,Dunder Mifflin #261,23,83,100,1,19,Basic,1,37.99,0
+CUST-1162,Vandelay Industries #262,3,15,58,3,37,Basic,12,34.74,0
+CUST-1163,Bluth Company #263,10,45,42,4,58,Basic,18,31.09,1
+CUST-1164,Soylent Corp #264,6,42,97,4,4,Basic,25,44.27,1
+CUST-1165,Globex #265,5,13,51,4,47,Enterprise,16,754.4,0
+CUST-1166,Initech #266,2,33,63,3,4,Basic,20,40.14,1
+CUST-1167,Dunder Mifflin #267,13,67,100,3,20,Basic,13,37.23,0
+CUST-1168,Hooli #268,8,41,86,5,10,Basic,30,38.21,1
+CUST-1169,Dunder Mifflin #269,18,65,84,1,24,Pro,11,110.6,0
+CUST-1170,Dunder Mifflin #270,6,50,77,4,54,Enterprise,20,835.46,0
+CUST-1171,Dunder Mifflin #271,10,44,75,1,35,Pro,11,142.24,0
+CUST-1172,Globex #272,5,35,53,2,26,Pro,10,180.68,0
+CUST-1173,Globex #273,20,52,70,1,37,Pro,6,118.63,0
+CUST-1174,Hooli #274,14,57,77,2,38,Basic,3,33.1,0
+CUST-1175,Acme Corp #275,13,50,63,3,21,Enterprise,18,821.88,0
+CUST-1176,Acme Corp #276,18,73,62,1,54,Pro,0,183.6,0
+CUST-1177,Gekko & Co #277,14,66,69,5,40,Pro,27,146.22,0
+CUST-1178,Globex #278,1,43,46,3,39,Pro,30,171.7,1
+CUST-1179,Bluth Company #279,11,44,62,4,21,Pro,23,198.93,1
+CUST-1180,Vehement Capital #280,6,9,17,6,10,Pro,28,198.03,1
+CUST-1181,Umbrella Corp #281,24,89,89,2,38,Enterprise,2,871.17,0
+CUST-1182,Aperture Science #282,7,50,40,2,46,Enterprise,12,868.79,0
+CUST-1183,Dunder Mifflin #283,16,52,59,3,4,Pro,14,123.76,1
+CUST-1184,Vehement Capital #284,16,70,82,2,60,Pro,1,182.35,0
+CUST-1185,Hooli #285,13,34,68,1,57,Basic,10,37.1,0
+CUST-1186,Vandelay Industries #286,14,73,86,2,45,Pro,3,195.2,0
+CUST-1187,Globex #287,16,56,72,2,20,Basic,18,30.63,1
+CUST-1188,Vehement Capital #288,7,31,38,3,17,Pro,28,142.58,1
+CUST-1189,Aperture Science #289,2,24,66,4,55,Enterprise,16,776.92,1
+CUST-1190,Tyrell Corp #290,20,66,56,0,7,Pro,2,139.52,0
+CUST-1191,Tyrell Corp #291,12,53,82,4,4,Basic,27,33.21,1
+CUST-1192,Acme Corp #292,12,54,76,3,29,Basic,17,40.86,0
+CUST-1193,Massive Dynamic #293,7,37,78,3,14,Basic,7,44.12,0
+CUST-1194,Vehement Capital #294,3,39,59,5,3,Pro,21,163.48,0
+CUST-1195,Tyrell Corp #295,1,32,43,3,24,Basic,24,33.69,1
+CUST-1196,Initech #296,10,40,40,7,37,Basic,23,43.63,1
+CUST-1197,Vandelay Industries #297,1,20,32,4,16,Basic,25,34.14,1
+CUST-1198,Umbrella Corp #298,1,41,35,7,58,Pro,18,116.52,1
+CUST-1199,Gekko & Co #299,20,77,92,6,55,Pro,4,168.07,0
+CUST-1200,Initech #300,17,64,88,1,52,Basic,6,45.86,0
+CUST-1201,Gekko & Co #301,7,57,76,0,4,Basic,20,38.63,0
+CUST-1202,Vandelay Industries #302,12,24,51,3,56,Pro,7,152.14,0
+CUST-1203,Soylent Corp #303,1,23,82,1,24,Pro,27,129.27,1
+CUST-1204,Vandelay Industries #304,18,48,62,0,34,Pro,4,148.46,0
+CUST-1205,Massive Dynamic #305,6,75,80,1,30,Basic,16,31.64,0
+CUST-1206,Acme Corp #306,15,70,74,0,18,Pro,4,194.58,0
+CUST-1207,Reynholm Industries #307,1,30,49,2,19,Basic,3,45.01,0
+CUST-1208,Soylent Corp #308,13,67,82,7,31,Enterprise,21,832.99,0
+CUST-1209,Prestige Worldwide #309,5,56,58,5,60,Pro,18,152.82,0
+CUST-1210,Reynholm Industries #310,1,48,53,6,60,Basic,30,44.84,1
+CUST-1211,Acme Corp #311,5,53,76,4,19,Basic,26,38.9,1
+CUST-1212,Aperture Science #312,6,38,51,7,49,Pro,20,129.0,0
+CUST-1213,Prestige Worldwide #313,20,62,73,6,46,Pro,1,115.04,0
+CUST-1214,Cyberdyne Systems #314,9,33,51,3,19,Pro,10,163.76,0
+CUST-1215,Initech #315,15,67,73,4,22,Pro,21,191.94,1
+CUST-1216,Soylent Corp #316,13,53,56,3,24,Pro,12,114.36,1
+CUST-1217,Tyrell Corp #317,15,53,56,6,45,Pro,14,117.0,0
+CUST-1218,Tyrell Corp #318,11,44,49,2,12,Basic,11,37.67,0
+CUST-1219,Vandelay Industries #319,15,81,93,5,30,Enterprise,21,902.45,0
+CUST-1220,Dunder Mifflin #320,3,50,67,4,58,Basic,20,34.88,0
+CUST-1221,Globex #321,9,75,91,3,38,Basic,21,34.08,0
+CUST-1222,Acme Corp #322,10,57,83,2,53,Enterprise,10,808.98,0
+CUST-1223,Tyrell Corp #323,20,70,68,1,31,Basic,6,39.71,0
+CUST-1224,Bluth Company #324,14,57,81,5,36,Basic,27,30.2,1
+CUST-1225,Hooli #325,13,40,59,4,19,Basic,4,30.63,0
+CUST-1226,Hooli #326,3,17,46,5,48,Enterprise,16,820.51,1
+CUST-1227,Massive Dynamic #327,10,57,87,4,45,Basic,23,38.3,0
+CUST-1228,Massive Dynamic #328,1,17,56,7,36,Basic,19,48.42,1
+CUST-1229,Initech #329,20,73,71,2,30,Basic,8,42.57,0
+CUST-1230,Gekko & Co #330,8,62,78,8,55,Basic,13,29.2,1
+CUST-1231,Tyrell Corp #331,7,34,38,2,49,Basic,25,38.62,1
+CUST-1232,Tyrell Corp #332,8,76,81,1,55,Basic,11,37.29,0
+CUST-1233,Initech #333,8,31,33,3,33,Pro,5,109.67,0
+CUST-1234,Vandelay Industries #334,13,70,60,2,18,Basic,16,47.46,0
+CUST-1235,Acme Corp #335,8,52,74,3,52,Basic,18,45.1,0
+CUST-1236,Vandelay Industries #336,9,65,32,2,49,Basic,18,33.6,0
+CUST-1237,Aperture Science #337,2,17,75,6,59,Basic,25,34.12,1
+CUST-1238,Dunder Mifflin #338,14,92,98,3,28,Pro,15,102.2,0
+CUST-1239,Reynholm Industries #339,16,59,41,2,59,Pro,11,128.67,0
+CUST-1240,Umbrella Corp #340,10,60,100,2,47,Basic,11,40.69,0
+CUST-1241,Vehement Capital #341,15,81,100,2,11,Basic,19,37.42,0
+CUST-1242,Reynholm Industries #342,12,44,59,4,57,Basic,5,48.39,0
+CUST-1243,Vandelay Industries #343,9,60,56,3,60,Enterprise,30,527.04,0
+CUST-1244,Initech #344,1,20,75,5,54,Pro,22,158.14,1
+CUST-1245,Tyrell Corp #345,9,68,68,5,45,Pro,25,184.83,0
+CUST-1246,Initech #346,12,42,63,5,33,Basic,3,38.61,0
+CUST-1247,Prestige Worldwide #347,14,58,87,2,17,Enterprise,5,500.48,0
+CUST-1248,Wayne Enterprises #348,12,58,66,4,6,Basic,10,33.86,1
+CUST-1249,Prestige Worldwide #349,15,71,71,0,4,Basic,0,35.48,0
+CUST-1250,Globex #350,9,77,59,7,20,Basic,29,48.32,1
+CUST-1251,Initech #351,5,33,47,5,48,Basic,23,47.24,1
+CUST-1252,Tyrell Corp #352,11,69,70,1,47,Enterprise,22,973.59,0
+CUST-1253,Massive Dynamic #353,16,91,66,3,27,Pro,14,181.58,0
+CUST-1254,Umbrella Corp #354,1,34,39,1,15,Basic,26,36.03,1
+CUST-1255,Acme Corp #355,8,37,59,1,6,Pro,10,189.59,0
+CUST-1256,Umbrella Corp #356,4,12,18,3,47,Enterprise,24,989.84,1
+CUST-1257,Acme Corp #357,4,66,59,2,14,Enterprise,18,674.04,1
+CUST-1258,Wayne Enterprises #358,7,40,89,1,60,Pro,17,125.06,0
+CUST-1259,Tyrell Corp #359,15,44,56,2,11,Enterprise,16,772.46,1
+CUST-1260,Vandelay Industries #360,16,41,53,2,39,Enterprise,18,592.58,0
+CUST-1261,Reynholm Industries #361,9,32,50,4,9,Pro,20,102.26,0
+CUST-1262,Soylent Corp #362,9,61,65,5,26,Basic,13,47.92,0
+CUST-1263,Initech #363,11,67,82,4,16,Basic,26,47.51,1
+CUST-1264,Dunder Mifflin #364,1,41,68,4,5,Pro,17,115.27,1
+CUST-1265,Acme Corp #365,1,33,50,0,57,Basic,27,37.15,0
+CUST-1266,Tyrell Corp #366,1,13,43,5,52,Pro,18,182.1,1
+CUST-1267,Bluth Company #367,5,29,74,5,10,Basic,14,42.22,1
+CUST-1268,Gekko & Co #368,2,17,25,8,50,Basic,30,36.9,1
+CUST-1269,Wayne Enterprises #369,18,74,76,3,3,Basic,14,43.88,1
+CUST-1270,Vehement Capital #370,1,16,50,2,13,Basic,3,46.94,0
+CUST-1271,Vehement Capital #371,11,41,48,4,43,Enterprise,6,962.08,0
+CUST-1272,Stark Industries #372,14,55,65,2,49,Pro,12,136.88,0
+CUST-1273,Gekko & Co #373,16,36,44,1,30,Pro,2,116.36,0
+CUST-1274,Reynholm Industries #374,17,64,81,4,54,Pro,15,190.28,0
+CUST-1275,Globex #375,6,40,39,6,45,Basic,30,30.85,1
+CUST-1276,Acme Corp #376,14,75,93,1,6,Pro,8,171.17,0
+CUST-1277,Oscorp #377,3,23,50,3,17,Pro,7,113.05,1
+CUST-1278,Acme Corp #378,4,18,42,5,59,Pro,19,137.94,0
+CUST-1279,Hooli #379,2,28,38,3,45,Basic,12,37.23,0
+CUST-1280,Tyrell Corp #380,13,39,74,4,51,Pro,16,114.88,0
+CUST-1281,Gekko & Co #381,11,52,56,7,53,Basic,16,47.45,0
+CUST-1282,Umbrella Corp #382,11,24,34,3,19,Enterprise,16,500.33,0
+CUST-1283,Initech #383,10,40,75,1,42,Enterprise,0,945.9,0
+CUST-1284,Dunder Mifflin #384,8,32,42,2,35,Basic,7,46.68,1
+CUST-1285,Dunder Mifflin #385,10,58,67,4,46,Pro,18,130.7,0
+CUST-1286,Bluth Company #386,2,21,62,5,26,Pro,30,169.43,1
+CUST-1287,Wayne Enterprises #387,8,19,51,0,51,Basic,5,34.06,0
+CUST-1288,Vehement Capital #388,11,48,89,1,5,Enterprise,2,878.39,0
+CUST-1289,Initech #389,3,40,47,4,29,Enterprise,26,779.56,1
+CUST-1290,Massive Dynamic #390,9,43,58,3,37,Basic,4,35.0,0
+CUST-1291,Hooli #391,5,30,53,2,20,Basic,12,37.0,0
+CUST-1292,Dunder Mifflin #392,13,45,71,3,49,Basic,14,42.8,0
+CUST-1293,Wayne Enterprises #393,18,67,92,4,21,Basic,13,47.12,0
+CUST-1294,Initech #394,6,28,55,4,10,Basic,28,31.61,1
+CUST-1295,Acme Corp #395,7,39,57,5,5,Enterprise,30,784.68,1
+CUST-1296,Vandelay Industries #396,11,63,49,6,36,Basic,22,34.07,1
+CUST-1297,Acme Corp #397,12,34,58,3,6,Basic,15,45.03,1
+CUST-1298,Initech #398,5,39,49,6,26,Enterprise,17,534.12,0
+CUST-1299,Prestige Worldwide #399,17,37,67,4,4,Pro,21,167.9,0
+CUST-1300,Cyberdyne Systems #400,2,37,52,3,39,Basic,28,32.5,1
+CUST-1301,Initech #401,11,37,54,7,39,Basic,21,40.93,1
+CUST-1302,Reynholm Industries #402,14,73,54,2,50,Basic,10,45.71,1
+CUST-1303,Wayne Enterprises #403,4,15,20,2,35,Pro,2,174.51,0
+CUST-1304,Prestige Worldwide #404,6,48,91,3,1,Basic,21,44.06,0
+CUST-1305,Oscorp #405,12,72,77,1,24,Pro,9,150.78,0
+CUST-1306,Globex #406,12,38,65,1,57,Enterprise,9,944.37,0
+CUST-1307,Cyberdyne Systems #407,7,31,41,2,36,Basic,29,40.76,1
+CUST-1308,Globex #408,12,39,72,2,6,Enterprise,20,957.76,0
+CUST-1309,Dunder Mifflin #409,10,42,71,2,41,Enterprise,15,772.26,0
+CUST-1310,Reynholm Industries #410,13,63,59,3,54,Basic,11,39.12,0
+CUST-1311,Acme Corp #411,14,49,48,5,46,Enterprise,1,610.18,0
+CUST-1312,Massive Dynamic #412,7,27,42,1,60,Pro,8,153.48,0
+CUST-1313,Aperture Science #413,8,15,47,9,44,Enterprise,23,569.29,1
+CUST-1314,Tyrell Corp #414,18,90,87,2,60,Pro,2,185.97,0
+CUST-1315,Soylent Corp #415,13,81,81,1,57,Pro,23,166.59,0
+CUST-1316,Cyberdyne Systems #416,8,54,86,3,31,Pro,29,198.36,0
+CUST-1317,Initech #417,14,45,51,1,20,Enterprise,24,545.05,1
+CUST-1318,Prestige Worldwide #418,8,57,52,2,24,Pro,29,123.07,0
+CUST-1319,Stark Industries #419,15,74,77,1,25,Pro,14,186.72,0
+CUST-1320,Soylent Corp #420,19,64,46,2,36,Enterprise,2,696.63,0
+CUST-1321,Umbrella Corp #421,8,46,73,4,21,Basic,18,38.33,0
+CUST-1322,Stark Industries #422,13,74,78,3,30,Basic,17,46.21,0
+CUST-1323,Vandelay Industries #423,8,21,45,6,24,Basic,7,39.44,1
+CUST-1324,Acme Corp #424,9,62,65,4,44,Basic,25,32.87,1
+CUST-1325,Reynholm Industries #425,13,51,79,2,42,Basic,16,46.84,0
+CUST-1326,Wayne Enterprises #426,18,49,77,0,30,Enterprise,7,514.53,0
+CUST-1327,Tyrell Corp #427,17,48,60,1,22,Basic,6,46.91,0
+CUST-1328,Wayne Enterprises #428,11,39,68,4,28,Pro,29,104.05,1
+CUST-1329,Bluth Company #429,12,35,70,2,7,Basic,6,42.32,0
+CUST-1330,Gekko & Co #430,12,80,85,2,35,Enterprise,2,534.84,0
+CUST-1331,Oscorp #431,13,63,68,0,55,Enterprise,0,852.11,0
+CUST-1332,Globex #432,15,75,83,1,28,Basic,3,29.68,0
+CUST-1333,Globex #433,1,40,44,4,14,Enterprise,24,920.23,1
+CUST-1334,Gekko & Co #434,20,70,76,2,56,Basic,4,38.32,0
+CUST-1335,Dunder Mifflin #435,15,61,67,2,10,Pro,0,108.35,0
+CUST-1336,Vandelay Industries #436,8,40,54,6,16,Basic,14,43.14,1
+CUST-1337,Cyberdyne Systems #437,1,27,27,3,16,Enterprise,4,743.65,0
+CUST-1338,Vehement Capital #438,11,30,39,4,54,Basic,12,32.82,0
+CUST-1339,Oscorp #439,11,68,66,1,31,Pro,7,100.57,0
+CUST-1340,Aperture Science #440,8,18,62,5,42,Pro,7,140.8,0
+CUST-1341,Hooli #441,10,34,61,3,25,Basic,4,30.71,0
+CUST-1342,Acme Corp #442,6,72,90,4,13,Basic,27,30.88,1
+CUST-1343,Reynholm Industries #443,9,50,83,2,6,Basic,8,34.35,0
+CUST-1344,Bluth Company #444,8,48,68,3,44,Basic,30,41.61,0
+CUST-1345,Bluth Company #445,11,61,72,1,9,Pro,0,151.99,0
+CUST-1346,Hooli #446,14,34,42,5,45,Basic,3,30.38,0
+CUST-1347,Soylent Corp #447,20,49,94,4,36,Basic,2,48.37,0
+CUST-1348,Umbrella Corp #448,14,51,44,2,56,Basic,1,46.74,0
+CUST-1349,Vehement Capital #449,7,30,56,4,43,Pro,30,124.92,1
+CUST-1350,Stark Industries #450,14,56,80,3,20,Basic,7,31.45,0
+CUST-1351,Vandelay Industries #451,8,53,79,2,18,Basic,22,47.85,1
+CUST-1352,Oscorp #452,12,74,59,6,58,Basic,8,38.22,0
+CUST-1353,Initech #453,11,64,65,2,43,Basic,1,35.22,0
+CUST-1354,Reynholm Industries #454,11,37,46,1,57,Pro,13,148.04,0
+CUST-1355,Vandelay Industries #455,9,42,31,3,21,Basic,13,44.45,0
+CUST-1356,Tyrell Corp #456,21,62,72,6,4,Basic,3,32.37,0
+CUST-1357,Stark Industries #457,10,34,46,2,50,Pro,29,175.75,1
+CUST-1358,Prestige Worldwide #458,1,13,69,3,33,Pro,30,173.94,1
+CUST-1359,Cyberdyne Systems #459,6,66,82,3,27,Basic,5,39.79,0
+CUST-1360,Gekko & Co #460,11,52,66,3,7,Pro,10,185.58,0
+CUST-1361,Dunder Mifflin #461,12,50,57,2,6,Enterprise,2,565.07,0
+CUST-1362,Gekko & Co #462,11,59,71,0,15,Basic,7,40.91,0
+CUST-1363,Hooli #463,17,72,72,2,18,Pro,2,143.93,0
+CUST-1364,Massive Dynamic #464,12,70,76,3,32,Pro,13,141.23,0
+CUST-1365,Bluth Company #465,8,34,85,3,56,Basic,27,34.05,1
+CUST-1366,Acme Corp #466,18,72,60,3,11,Basic,12,36.45,1
+CUST-1367,Acme Corp #467,4,24,49,4,20,Basic,12,31.16,1
+CUST-1368,Oscorp #468,15,57,79,1,24,Enterprise,1,624.8,0
+CUST-1369,Globex #469,8,46,56,0,15,Enterprise,12,634.98,0
+CUST-1370,Tyrell Corp #470,13,58,92,5,48,Pro,28,171.07,1
+CUST-1371,Reynholm Industries #471,1,33,66,4,7,Basic,18,29.97,1
+CUST-1372,Stark Industries #472,1,44,51,1,21,Pro,26,164.12,1
+CUST-1373,Acme Corp #473,15,51,68,2,42,Pro,5,121.14,0
+CUST-1374,Tyrell Corp #474,16,64,61,3,26,Basic,15,30.64,0
+CUST-1375,Soylent Corp #475,18,54,55,1,44,Basic,1,35.02,0
+CUST-1376,Hooli #476,8,89,82,1,56,Pro,7,121.45,0
+CUST-1377,Initech #477,17,50,83,2,14,Basic,16,40.04,0
+CUST-1378,Bluth Company #478,2,23,62,4,57,Pro,22,134.74,1
+CUST-1379,Tyrell Corp #479,21,85,82,2,37,Basic,1,48.32,0
+CUST-1380,Gekko & Co #480,6,35,69,2,58,Basic,9,48.27,0
+CUST-1381,Hooli #481,5,53,70,10,21,Basic,27,37.87,1
+CUST-1382,Wayne Enterprises #482,13,58,51,6,18,Basic,15,44.9,0
+CUST-1383,Hooli #483,6,35,55,1,5,Enterprise,5,505.63,0
+CUST-1384,Oscorp #484,14,46,61,4,3,Basic,27,39.96,1
+CUST-1385,Dunder Mifflin #485,12,42,72,1,23,Enterprise,1,870.65,0
+CUST-1386,Wayne Enterprises #486,15,54,58,1,26,Pro,1,120.69,0
+CUST-1387,Vandelay Industries #487,13,53,52,3,37,Pro,25,105.12,1
+CUST-1388,Hooli #488,7,31,54,0,24,Basic,12,32.12,0
+CUST-1389,Bluth Company #489,13,54,57,0,49,Pro,23,143.18,0
+CUST-1390,Tyrell Corp #490,19,51,60,4,19,Pro,14,149.64,0
+CUST-1391,Tyrell Corp #491,2,45,61,2,51,Basic,30,36.62,1
+CUST-1392,Soylent Corp #492,13,70,69,5,25,Basic,27,37.8,0
+CUST-1393,Umbrella Corp #493,5,29,68,1,21,Enterprise,1,734.12,0
+CUST-1394,Acme Corp #494,15,48,85,1,12,Enterprise,6,883.72,0
+CUST-1395,Hooli #495,8,48,76,1,57,Basic,2,31.1,0
+CUST-1396,Cyberdyne Systems #496,17,82,54,3,41,Pro,7,175.9,0
+CUST-1397,Hooli #497,12,76,68,5,33,Enterprise,22,843.31,0
+CUST-1398,Umbrella Corp #498,21,50,62,2,50,Enterprise,13,869.83,0
+CUST-1399,Globex #499,15,75,49,3,53,Enterprise,23,866.23,0
+CUST-1400,Vandelay Industries #500,5,39,46,3,4,Pro,29,146.06,1
+CUST-1401,Cyberdyne Systems #501,2,33,53,1,42,Basic,22,33.23,0
+CUST-1402,Gekko & Co #502,10,57,61,7,57,Basic,26,39.73,0
+CUST-1403,Acme Corp #503,8,38,59,4,7,Basic,21,48.16,1
+CUST-1404,Hooli #504,14,74,56,3,22,Pro,28,157.85,1
+CUST-1405,Stark Industries #505,2,55,60,2,55,Pro,6,100.1,0
+CUST-1406,Umbrella Corp #506,19,89,86,6,33,Basic,20,30.19,1
+CUST-1407,Tyrell Corp #507,15,32,56,6,17,Enterprise,6,995.43,0
+CUST-1408,Tyrell Corp #508,10,46,69,0,24,Pro,0,106.19,0
+CUST-1409,Globex #509,13,26,58,1,34,Pro,16,103.6,1
+CUST-1410,Dunder Mifflin #510,19,56,61,1,28,Basic,8,36.06,0
+CUST-1411,Vandelay Industries #511,6,6,44,7,58,Pro,29,195.93,1
+CUST-1412,Bluth Company #512,1,38,47,2,43,Basic,20,35.37,0
+CUST-1413,Prestige Worldwide #513,9,51,61,2,41,Basic,12,37.2,0
+CUST-1414,Initech #514,14,51,49,3,39,Basic,20,41.68,0
+CUST-1415,Acme Corp #515,12,42,76,1,22,Basic,18,29.48,0
+CUST-1416,Acme Corp #516,8,50,60,0,49,Basic,20,46.96,0
+CUST-1417,Gekko & Co #517,16,46,78,0,17,Pro,18,150.94,0
+CUST-1418,Aperture Science #518,11,35,62,4,34,Basic,24,38.34,0
+CUST-1419,Hooli #519,11,33,43,8,6,Pro,24,185.07,1
+CUST-1420,Bluth Company #520,6,38,62,4,46,Basic,21,48.06,0
+CUST-1421,Initech #521,3,27,65,6,6,Enterprise,30,710.71,1
+CUST-1422,Acme Corp #522,1,26,51,5,34,Enterprise,16,585.22,1
+CUST-1423,Acme Corp #523,7,51,66,2,1,Basic,22,45.31,1
+CUST-1424,Reynholm Industries #524,13,70,66,3,10,Basic,22,37.07,0
+CUST-1425,Cyberdyne Systems #525,5,61,70,10,21,Basic,29,47.71,1
+CUST-1426,Aperture Science #526,14,58,72,0,5,Pro,9,193.99,0
+CUST-1427,Bluth Company #527,17,69,65,2,2,Pro,9,110.48,0
+CUST-1428,Stark Industries #528,15,62,54,2,22,Basic,3,48.13,0
+CUST-1429,Bluth Company #529,15,34,76,5,48,Pro,7,135.83,0
+CUST-1430,Wayne Enterprises #530,1,26,62,1,57,Basic,21,41.93,1
+CUST-1431,Globex #531,7,38,50,7,2,Basic,19,29.7,1
+CUST-1432,Gekko & Co #532,17,56,71,3,10,Pro,19,187.89,0
+CUST-1433,Prestige Worldwide #533,10,49,42,5,34,Basic,17,41.83,1
+CUST-1434,Initech #534,20,66,43,0,16,Pro,13,163.36,0
+CUST-1435,Dunder Mifflin #535,6,27,69,1,48,Basic,17,47.04,0
+CUST-1436,Reynholm Industries #536,8,43,64,2,51,Enterprise,27,753.17,1
+CUST-1437,Cyberdyne Systems #537,9,38,58,2,39,Basic,13,37.21,0
+CUST-1438,Globex #538,12,14,50,3,22,Basic,19,46.32,1
+CUST-1439,Gekko & Co #539,13,35,100,2,12,Pro,20,173.24,0
+CUST-1440,Massive Dynamic #540,11,53,79,4,24,Basic,23,47.98,1
+CUST-1441,Soylent Corp #541,16,78,63,3,47,Enterprise,14,969.06,0
+CUST-1442,Umbrella Corp #542,8,9,19,6,40,Pro,21,137.23,1
+CUST-1443,Prestige Worldwide #543,5,26,68,7,38,Pro,29,143.7,1
+CUST-1444,Stark Industries #544,1,38,71,3,60,Pro,30,124.6,1
+CUST-1445,Aperture Science #545,17,77,87,0,59,Enterprise,3,829.32,0
+CUST-1446,Umbrella Corp #546,12,47,51,0,10,Enterprise,12,681.27,0
+CUST-1447,Umbrella Corp #547,6,31,60,6,35,Pro,26,177.61,1
+CUST-1448,Cyberdyne Systems #548,7,62,60,2,51,Pro,22,111.16,0
+CUST-1449,Hooli #549,12,65,82,1,49,Basic,7,31.33,0
+CUST-1450,Massive Dynamic #550,8,58,83,2,32,Basic,17,33.09,0
+CUST-1451,Initech #551,9,40,51,2,7,Pro,11,107.43,1
+CUST-1452,Dunder Mifflin #552,9,64,88,6,21,Basic,22,41.4,1
+CUST-1453,Initech #553,8,16,49,2,20,Basic,30,31.95,1
+CUST-1454,Tyrell Corp #554,7,60,77,5,26,Basic,13,32.2,0
+CUST-1455,Umbrella Corp #555,12,53,46,4,4,Basic,1,29.28,0
+CUST-1456,Prestige Worldwide #556,8,47,66,2,46,Pro,17,177.21,0
+CUST-1457,Dunder Mifflin #557,8,31,45,3,52,Enterprise,23,905.15,0
+CUST-1458,Soylent Corp #558,14,30,62,0,22,Basic,1,32.24,0
+CUST-1459,Hooli #559,9,49,86,5,15,Pro,30,172.95,0
+CUST-1460,Bluth Company #560,3,44,66,4,56,Enterprise,10,715.77,1
+CUST-1461,Dunder Mifflin #561,5,50,51,2,40,Basic,8,33.79,0
+CUST-1462,Stark Industries #562,12,62,80,1,21,Pro,11,161.14,0
+CUST-1463,Initech #563,7,49,70,5,15,Basic,16,32.57,1
+CUST-1464,Massive Dynamic #564,15,46,93,6,22,Basic,14,44.14,0
+CUST-1465,Dunder Mifflin #565,13,67,77,4,52,Enterprise,24,522.81,0
+CUST-1466,Dunder Mifflin #566,7,28,45,5,28,Basic,30,48.18,1
+CUST-1467,Vandelay Industries #567,4,54,78,5,14,Pro,16,106.19,0
+CUST-1468,Tyrell Corp #568,12,52,64,4,27,Pro,25,156.94,1
+CUST-1469,Stark Industries #569,7,43,62,2,41,Basic,28,47.04,0
+CUST-1470,Gekko & Co #570,1,44,48,4,40,Pro,25,100.19,1
+CUST-1471,Dunder Mifflin #571,2,49,62,1,58,Enterprise,17,748.26,0
+CUST-1472,Umbrella Corp #572,16,73,76,2,28,Basic,21,36.0,0
+CUST-1473,Bluth Company #573,20,57,66,1,26,Enterprise,5,789.17,0
+CUST-1474,Massive Dynamic #574,1,43,52,4,49,Pro,16,121.55,1
+CUST-1475,Gekko & Co #575,1,19,53,3,2,Pro,22,105.49,1
+CUST-1476,Bluth Company #576,13,67,59,3,25,Pro,23,161.59,1
+CUST-1477,Massive Dynamic #577,9,26,35,0,56,Basic,17,37.34,1
+CUST-1478,Soylent Corp #578,16,60,80,5,3,Enterprise,7,810.24,1
+CUST-1479,Wayne Enterprises #579,12,41,69,0,8,Enterprise,8,604.27,0
+CUST-1480,Vandelay Industries #580,16,75,57,1,44,Pro,5,132.87,0
+CUST-1481,Gekko & Co #581,13,72,48,1,33,Pro,4,155.17,0
+CUST-1482,Oscorp #582,9,50,49,5,42,Pro,11,158.31,1
+CUST-1483,Tyrell Corp #583,13,58,67,4,52,Basic,24,36.45,1
+CUST-1484,Hooli #584,7,54,84,7,35,Pro,28,127.01,1
+CUST-1485,Initech #585,10,66,70,9,6,Pro,27,126.37,1
+CUST-1486,Bluth Company #586,12,54,55,3,39,Pro,10,116.47,0
+CUST-1487,Vandelay Industries #587,5,32,58,6,52,Pro,24,131.54,1
+CUST-1488,Umbrella Corp #588,23,85,80,2,23,Basic,0,32.99,0
+CUST-1489,Tyrell Corp #589,13,28,33,3,25,Basic,10,41.68,0
+CUST-1490,Soylent Corp #590,7,57,47,3,59,Basic,18,40.38,0
+CUST-1491,Stark Industries #591,18,55,47,3,50,Basic,8,36.65,0
+CUST-1492,Cyberdyne Systems #592,1,28,91,2,43,Pro,26,131.58,0
+CUST-1493,Soylent Corp #593,25,93,99,0,19,Pro,1,122.76,0
+CUST-1494,Wayne Enterprises #594,10,43,52,2,5,Pro,11,152.55,0
+CUST-1495,Hooli #595,7,53,83,0,51,Basic,3,47.38,0
+CUST-1496,Initech #596,23,93,77,1,11,Pro,3,167.57,0
+CUST-1497,Aperture Science #597,7,45,78,2,56,Basic,17,43.89,0
+CUST-1498,Aperture Science #598,12,58,70,8,12,Basic,14,45.69,1
+CUST-1499,Prestige Worldwide #599,13,54,57,2,10,Pro,18,134.16,1
+CUST-1500,Oscorp #600,17,65,82,1,8,Enterprise,12,530.44,0
+CUST-1501,Bluth Company #601,11,35,59,1,24,Basic,18,41.45,0
+CUST-1502,Massive Dynamic #602,6,37,64,1,60,Basic,16,32.77,0
+CUST-1503,Cyberdyne Systems #603,14,38,62,3,28,Basic,5,40.38,0
+CUST-1504,Bluth Company #604,8,32,59,7,41,Basic,15,43.79,0
+CUST-1505,Dunder Mifflin #605,9,17,60,6,36,Pro,23,177.36,1
+CUST-1506,Vehement Capital #606,19,71,100,0,37,Basic,11,35.04,0
+CUST-1507,Soylent Corp #607,13,81,99,8,21,Pro,18,150.24,0
+CUST-1508,Wayne Enterprises #608,14,51,68,1,8,Basic,4,41.42,0
+CUST-1509,Stark Industries #609,13,70,70,2,55,Basic,16,45.39,0
+CUST-1510,Reynholm Industries #610,11,68,70,6,9,Basic,25,44.23,1
+CUST-1511,Cyberdyne Systems #611,3,18,30,2,47,Basic,22,48.76,0
+CUST-1512,Massive Dynamic #612,7,29,64,3,15,Basic,25,29.16,0
+CUST-1513,Prestige Worldwide #613,19,82,65,9,48,Basic,28,37.75,0
+CUST-1514,Globex #614,21,70,69,0,46,Pro,0,124.6,0
+CUST-1515,Hooli #615,4,18,59,4,40,Basic,27,31.4,1
+CUST-1516,Hooli #616,4,28,50,4,18,Enterprise,26,954.76,1
+CUST-1517,Vehement Capital #617,4,44,54,1,42,Basic,24,48.96,0
+CUST-1518,Gekko & Co #618,12,42,43,4,60,Pro,23,117.06,1
+CUST-1519,Reynholm Industries #619,16,20,68,3,20,Pro,22,102.84,0
+CUST-1520,Tyrell Corp #620,15,55,55,2,6,Pro,9,126.51,0
+CUST-1521,Stark Industries #621,11,48,55,2,12,Pro,14,182.49,0
+CUST-1522,Acme Corp #622,6,42,34,2,2,Pro,22,128.39,1
+CUST-1523,Vandelay Industries #623,10,68,73,1,7,Pro,20,104.69,1
+CUST-1524,Dunder Mifflin #624,4,38,54,3,16,Pro,20,104.25,1
+CUST-1525,Soylent Corp #625,2,37,61,2,3,Pro,10,141.74,0
+CUST-1526,Stark Industries #626,19,83,63,0,45,Basic,12,47.64,0
+CUST-1527,Umbrella Corp #627,8,46,74,2,3,Basic,4,34.72,0
+CUST-1528,Umbrella Corp #628,13,88,56,2,27,Pro,0,141.72,0
+CUST-1529,Vehement Capital #629,11,33,55,3,50,Pro,23,109.19,0
+CUST-1530,Gekko & Co #630,18,51,67,2,43,Pro,11,148.36,0
+CUST-1531,Bluth Company #631,13,65,73,2,40,Pro,10,168.65,0
+CUST-1532,Soylent Corp #632,4,56,70,0,38,Enterprise,16,634.58,0
+CUST-1533,Cyberdyne Systems #633,12,50,76,2,33,Basic,3,34.93,0
+CUST-1534,Gekko & Co #634,7,28,73,3,28,Basic,14,45.84,0
+CUST-1535,Soylent Corp #635,7,70,72,4,1,Basic,24,29.21,1
+CUST-1536,Initech #636,12,42,46,5,55,Basic,29,41.73,0
+CUST-1537,Stark Industries #637,1,37,66,1,8,Pro,8,138.39,0
+CUST-1538,Stark Industries #638,6,61,66,5,37,Basic,20,34.97,1
+CUST-1539,Prestige Worldwide #639,6,35,76,3,32,Pro,19,164.76,1
+CUST-1540,Vandelay Industries #640,3,26,43,1,60,Basic,18,45.69,1
+CUST-1541,Reynholm Industries #641,12,45,49,4,48,Pro,18,154.84,1
+CUST-1542,Massive Dynamic #642,4,51,67,2,43,Pro,11,102.11,1
+CUST-1543,Soylent Corp #643,7,59,43,4,37,Basic,4,38.23,0
+CUST-1544,Acme Corp #644,16,62,63,1,4,Pro,9,145.28,0
+CUST-1545,Initech #645,17,92,81,6,30,Basic,16,39.88,0
+CUST-1546,Stark Industries #646,13,56,71,3,6,Basic,4,42.42,0
+CUST-1547,Dunder Mifflin #647,2,53,51,1,46,Basic,21,29.39,1
+CUST-1548,Acme Corp #648,6,35,44,5,54,Basic,15,39.04,0
+CUST-1549,Vehement Capital #649,18,101,100,6,19,Basic,6,40.77,0
+CUST-1550,Vehement Capital #650,7,67,73,2,32,Pro,27,133.34,0
+CUST-1551,Bluth Company #651,12,52,78,1,9,Pro,8,165.84,0
+CUST-1552,Stark Industries #652,15,81,72,0,12,Pro,2,121.82,0
+CUST-1553,Stark Industries #653,10,70,74,4,11,Basic,14,35.35,0
+CUST-1554,Oscorp #654,18,89,87,3,46,Pro,15,195.28,0
+CUST-1555,Tyrell Corp #655,6,5,68,1,55,Basic,17,35.96,0
+CUST-1556,Aperture Science #656,6,52,62,4,16,Basic,13,35.93,1
+CUST-1557,Hooli #657,7,52,63,0,1,Enterprise,2,796.84,0
+CUST-1558,Umbrella Corp #658,9,55,83,2,45,Basic,11,48.42,0
+CUST-1559,Initech #659,7,47,57,1,55,Pro,8,197.31,0
+CUST-1560,Gekko & Co #660,7,47,67,5,53,Pro,27,156.97,1
+CUST-1561,Vandelay Industries #661,13,75,92,5,21,Basic,6,29.02,1
+CUST-1562,Prestige Worldwide #662,7,52,57,3,30,Basic,8,47.01,0
+CUST-1563,Oscorp #663,14,61,75,2,13,Basic,12,40.4,0
+CUST-1564,Massive Dynamic #664,17,81,100,1,34,Enterprise,17,682.0,0
+CUST-1565,Dunder Mifflin #665,15,66,86,1,4,Basic,4,45.58,0
+CUST-1566,Wayne Enterprises #666,1,39,63,4,28,Basic,12,37.0,1
+CUST-1567,Oscorp #667,24,106,89,2,38,Basic,3,29.68,0
+CUST-1568,Acme Corp #668,9,41,51,5,58,Pro,30,181.11,1
+CUST-1569,Initech #669,24,55,52,0,31,Basic,1,39.92,0
+CUST-1570,Tyrell Corp #670,15,61,93,3,59,Basic,15,35.76,0
+CUST-1571,Aperture Science #671,19,71,95,2,55,Pro,8,124.09,0
+CUST-1572,Bluth Company #672,13,66,63,2,27,Enterprise,8,795.9,0
+CUST-1573,Cyberdyne Systems #673,12,55,72,5,5,Basic,5,33.16,1
+CUST-1574,Tyrell Corp #674,13,67,75,4,25,Basic,10,35.48,0
+CUST-1575,Reynholm Industries #675,5,77,96,3,3,Basic,21,41.73,0
+CUST-1576,Vehement Capital #676,10,62,76,5,33,Pro,23,187.15,0
+CUST-1577,Bluth Company #677,1,46,62,6,4,Basic,21,39.66,1
+CUST-1578,Reynholm Industries #678,15,58,60,3,25,Pro,0,174.91,0
+CUST-1579,Umbrella Corp #679,20,49,69,0,20,Pro,3,175.31,0
+CUST-1580,Reynholm Industries #680,11,17,43,4,34,Pro,12,165.44,0
+CUST-1581,Prestige Worldwide #681,17,56,71,1,26,Basic,22,33.92,1
+CUST-1582,Hooli #682,10,11,44,5,5,Enterprise,12,932.39,1
+CUST-1583,Massive Dynamic #683,16,69,68,3,35,Pro,12,142.63,0
+CUST-1584,Umbrella Corp #684,10,44,47,2,28,Pro,1,103.42,0
+CUST-1585,Dunder Mifflin #685,17,44,69,3,29,Basic,8,33.89,0
+CUST-1586,Massive Dynamic #686,9,49,65,4,9,Enterprise,23,881.77,0
+CUST-1587,Acme Corp #687,11,40,86,4,52,Basic,7,30.38,0
+CUST-1588,Vandelay Industries #688,1,38,43,0,38,Basic,6,31.95,0
+CUST-1589,Stark Industries #689,12,64,81,1,50,Basic,3,42.88,0
+CUST-1590,Tyrell Corp #690,10,39,58,1,6,Pro,17,188.26,0
+CUST-1591,Stark Industries #691,18,62,100,2,19,Basic,2,41.67,0
+CUST-1592,Wayne Enterprises #692,14,61,78,5,60,Basic,27,33.45,1
+CUST-1593,Initech #693,23,54,71,3,44,Basic,5,30.07,0
+CUST-1594,Vehement Capital #694,17,67,72,4,57,Basic,11,41.3,0
+CUST-1595,Prestige Worldwide #695,8,24,41,5,11,Pro,11,103.74,1
+CUST-1596,Gekko & Co #696,7,52,70,6,2,Pro,20,160.27,1
+CUST-1597,Hooli #697,10,43,40,6,47,Basic,27,33.51,1
+CUST-1598,Oscorp #698,15,38,38,0,44,Basic,7,47.09,0
+CUST-1599,Globex #699,16,53,81,4,44,Pro,21,146.51,0
+CUST-1600,Cyberdyne Systems #700,21,63,45,10,9,Basic,21,33.48,1
+CUST-1601,Prestige Worldwide #701,26,98,84,1,21,Basic,0,46.06,0
+CUST-1602,Stark Industries #702,21,74,61,0,24,Enterprise,3,626.02,0
+CUST-1603,Hooli #703,11,37,52,3,34,Pro,20,129.66,0
+CUST-1604,Acme Corp #704,13,80,82,6,22,Basic,27,45.69,1
+CUST-1605,Acme Corp #705,20,79,94,1,3,Pro,10,129.88,0
+CUST-1606,Prestige Worldwide #706,13,50,83,3,12,Basic,2,37.2,0
+CUST-1607,Oscorp #707,8,22,37,3,28,Pro,12,133.77,1
+CUST-1608,Dunder Mifflin #708,3,29,47,2,30,Basic,24,31.33,1
+CUST-1609,Aperture Science #709,5,36,100,3,26,Basic,16,29.78,1
+CUST-1610,Dunder Mifflin #710,1,37,54,9,48,Basic,21,43.49,1
+CUST-1611,Stark Industries #711,9,57,55,6,21,Enterprise,21,821.57,1
+CUST-1612,Acme Corp #712,7,56,57,4,28,Pro,9,127.24,0
+CUST-1613,Globex #713,5,15,43,1,56,Basic,20,34.91,0
+CUST-1614,Massive Dynamic #714,15,63,65,3,26,Basic,11,47.9,0
+CUST-1615,Initech #715,11,49,60,5,33,Pro,14,197.77,0
+CUST-1616,Acme Corp #716,11,92,85,3,21,Basic,20,38.47,0
+CUST-1617,Tyrell Corp #717,19,68,73,2,35,Basic,9,45.05,1
+CUST-1618,Vehement Capital #718,15,50,50,3,52,Enterprise,13,867.34,0
+CUST-1619,Dunder Mifflin #719,18,67,79,2,34,Basic,12,34.95,0
+CUST-1620,Hooli #720,14,57,70,0,41,Pro,4,104.86,0
+CUST-1621,Hooli #721,21,42,68,1,51,Enterprise,5,570.28,0
+CUST-1622,Vehement Capital #722,9,54,41,2,47,Basic,23,45.77,1
+CUST-1623,Initech #723,15,55,69,2,18,Basic,1,43.62,1
+CUST-1624,Hooli #724,16,61,40,1,58,Basic,21,42.29,0
+CUST-1625,Hooli #725,5,26,50,1,11,Pro,16,112.06,0
+CUST-1626,Cyberdyne Systems #726,24,61,80,1,57,Enterprise,3,818.97,0
+CUST-1627,Cyberdyne Systems #727,9,61,86,4,23,Pro,13,176.22,0
+CUST-1628,Gekko & Co #728,6,58,74,5,48,Basic,9,46.21,0
+CUST-1629,Dunder Mifflin #729,17,70,85,1,22,Pro,2,100.32,0
+CUST-1630,Wayne Enterprises #730,5,12,41,3,17,Enterprise,24,841.24,1
+CUST-1631,Massive Dynamic #731,24,85,74,1,5,Pro,2,100.91,0
+CUST-1632,Wayne Enterprises #732,8,19,89,3,44,Enterprise,14,852.44,1
+CUST-1633,Acme Corp #733,15,50,77,3,11,Pro,5,162.56,0
+CUST-1634,Gekko & Co #734,3,48,46,2,30,Pro,16,113.83,0
+CUST-1635,Stark Industries #735,15,69,48,3,15,Pro,11,175.61,0
+CUST-1636,Stark Industries #736,4,44,55,4,27,Basic,21,30.37,1
+CUST-1637,Umbrella Corp #737,12,73,94,4,35,Basic,19,45.53,1
+CUST-1638,Acme Corp #738,5,48,64,2,33,Pro,23,125.19,1
+CUST-1639,Dunder Mifflin #739,1,5,10,3,20,Basic,28,42.78,1
+CUST-1640,Reynholm Industries #740,12,48,61,2,16,Enterprise,10,960.84,0
+CUST-1641,Globex #741,8,45,62,2,34,Enterprise,24,668.91,1
+CUST-1642,Reynholm Industries #742,18,63,35,0,2,Pro,3,149.29,0
+CUST-1643,Soylent Corp #743,15,50,65,3,35,Basic,25,38.26,0
+CUST-1644,Globex #744,16,46,47,3,40,Basic,27,32.15,1
+CUST-1645,Initech #745,11,88,56,7,56,Basic,25,40.81,1
+CUST-1646,Prestige Worldwide #746,14,52,90,2,28,Pro,5,173.3,0
+CUST-1647,Bluth Company #747,7,79,63,2,47,Pro,0,190.69,0
+CUST-1648,Acme Corp #748,10,32,45,5,39,Enterprise,19,924.4,1
+CUST-1649,Bluth Company #749,9,57,58,4,6,Basic,22,39.2,0
+CUST-1650,Hooli #750,5,43,61,10,9,Enterprise,27,858.51,1
+CUST-1651,Dunder Mifflin #751,13,42,87,6,20,Enterprise,15,899.39,0
+CUST-1652,Tyrell Corp #752,16,54,49,2,60,Basic,14,38.87,1
+CUST-1653,Oscorp #753,6,41,55,2,1,Enterprise,16,556.71,0
+CUST-1654,Oscorp #754,8,33,58,2,8,Basic,7,37.76,1
+CUST-1655,Hooli #755,6,38,45,1,55,Basic,27,45.85,1
+CUST-1656,Wayne Enterprises #756,4,5,37,5,23,Pro,25,158.66,1
+CUST-1657,Globex #757,3,46,71,7,3,Basic,11,43.49,0
+CUST-1658,Aperture Science #758,2,52,54,5,4,Pro,26,117.53,1
+CUST-1659,Gekko & Co #759,2,40,54,5,58,Pro,21,195.43,1
+CUST-1660,Soylent Corp #760,15,93,80,3,25,Pro,20,139.41,0
+CUST-1661,Vehement Capital #761,20,80,78,2,47,Basic,9,42.07,0
+CUST-1662,Globex #762,1,49,68,6,38,Pro,26,100.89,1
+CUST-1663,Vehement Capital #763,13,74,85,4,15,Pro,14,111.73,0
+CUST-1664,Prestige Worldwide #764,10,8,73,5,21,Pro,29,177.2,1
+CUST-1665,Globex #765,5,46,23,2,35,Basic,8,48.36,0
+CUST-1666,Prestige Worldwide #766,15,39,56,0,57,Basic,1,35.4,0
+CUST-1667,Oscorp #767,26,64,51,0,53,Pro,4,102.72,0
+CUST-1668,Gekko & Co #768,16,46,57,2,53,Basic,5,36.22,0
+CUST-1669,Globex #769,11,47,76,0,46,Pro,6,100.75,0
+CUST-1670,Vandelay Industries #770,6,51,83,5,52,Pro,20,118.24,1
+CUST-1671,Vehement Capital #771,1,38,77,4,14,Pro,24,174.25,1
+CUST-1672,Acme Corp #772,17,63,90,2,36,Pro,0,192.71,0
+CUST-1673,Oscorp #773,18,76,75,1,12,Enterprise,22,542.72,0
+CUST-1674,Cyberdyne Systems #774,3,47,84,4,17,Pro,25,154.79,0
+CUST-1675,Gekko & Co #775,3,42,84,3,39,Enterprise,6,625.94,0
+CUST-1676,Dunder Mifflin #776,5,14,49,3,9,Pro,19,112.91,1
+CUST-1677,Hooli #777,12,42,78,3,35,Basic,24,33.38,0
+CUST-1678,Umbrella Corp #778,4,38,59,4,60,Basic,29,40.56,0
+CUST-1679,Cyberdyne Systems #779,7,55,88,1,13,Pro,11,105.51,0
+CUST-1680,Dunder Mifflin #780,10,30,52,1,15,Basic,15,37.68,0
+CUST-1681,Cyberdyne Systems #781,11,51,56,1,18,Basic,15,31.7,1
+CUST-1682,Dunder Mifflin #782,5,16,31,1,51,Basic,10,34.45,0
+CUST-1683,Vandelay Industries #783,7,59,66,1,33,Pro,20,118.08,0
+CUST-1684,Hooli #784,11,55,68,3,6,Pro,3,187.3,0
+CUST-1685,Globex #785,8,25,38,2,59,Pro,12,169.8,0
+CUST-1686,Vehement Capital #786,8,25,48,2,27,Pro,6,185.85,0
+CUST-1687,Globex #787,18,71,67,1,23,Pro,3,137.35,0
+CUST-1688,Stark Industries #788,7,64,55,3,59,Basic,14,35.27,0
+CUST-1689,Aperture Science #789,1,15,63,5,27,Enterprise,18,689.29,1
+CUST-1690,Aperture Science #790,13,67,91,2,34,Basic,8,29.37,0
+CUST-1691,Tyrell Corp #791,15,51,80,1,56,Enterprise,10,861.35,0
+CUST-1692,Aperture Science #792,8,58,67,2,46,Pro,7,133.98,0
+CUST-1693,Gekko & Co #793,12,64,71,1,38,Basic,0,35.27,0
+CUST-1694,Oscorp #794,5,42,45,3,14,Basic,22,40.96,1
+CUST-1695,Tyrell Corp #795,6,14,53,5,36,Basic,24,37.72,1
+CUST-1696,Aperture Science #796,13,66,75,4,53,Basic,23,48.62,0
+CUST-1697,Tyrell Corp #797,12,61,100,3,8,Basic,7,36.13,0
+CUST-1698,Reynholm Industries #798,15,66,89,3,35,Pro,12,160.39,0
+CUST-1699,Umbrella Corp #799,3,38,63,3,19,Pro,21,130.17,1
+CUST-1700,Reynholm Industries #800,5,26,52,4,30,Pro,26,198.06,1
+CUST-1701,Umbrella Corp #801,18,82,96,0,14,Enterprise,3,721.56,0
+CUST-1702,Initech #802,8,59,55,3,59,Pro,7,162.41,0
+CUST-1703,Initech #803,19,51,82,0,20,Pro,2,111.67,0
+CUST-1704,Prestige Worldwide #804,3,55,51,2,49,Basic,28,43.66,0
+CUST-1705,Gekko & Co #805,10,51,57,0,25,Pro,8,125.92,1
+CUST-1706,Gekko & Co #806,14,59,41,5,40,Basic,28,37.97,1
+CUST-1707,Hooli #807,12,51,74,3,24,Enterprise,1,940.57,0
+CUST-1708,Prestige Worldwide #808,15,58,72,0,14,Pro,1,196.06,0
+CUST-1709,Cyberdyne Systems #809,9,68,65,5,26,Pro,27,141.46,1
+CUST-1710,Vehement Capital #810,12,69,60,2,38,Basic,12,45.7,0
+CUST-1711,Acme Corp #811,12,69,95,0,23,Enterprise,14,525.67,0
+CUST-1712,Hooli #812,6,44,59,3,22,Pro,27,183.76,1
+CUST-1713,Massive Dynamic #813,1,45,50,3,48,Basic,22,41.59,1
+CUST-1714,Bluth Company #814,13,43,90,2,57,Basic,11,38.77,0
+CUST-1715,Wayne Enterprises #815,3,44,52,5,19,Pro,25,188.0,1
+CUST-1716,Globex #816,17,61,87,2,46,Basic,3,45.91,0
+CUST-1717,Dunder Mifflin #817,14,27,36,4,51,Enterprise,25,647.47,1
+CUST-1718,Wayne Enterprises #818,3,12,40,1,3,Basic,7,44.83,0
+CUST-1719,Stark Industries #819,19,58,76,3,42,Basic,8,30.99,0
+CUST-1720,Massive Dynamic #820,6,48,63,1,19,Pro,22,181.28,1
+CUST-1721,Oscorp #821,13,46,66,2,9,Basic,4,42.51,0
+CUST-1722,Oscorp #822,3,27,45,1,28,Pro,23,107.79,1
+CUST-1723,Aperture Science #823,10,61,46,3,20,Basic,19,42.66,1
+CUST-1724,Tyrell Corp #824,10,41,82,4,45,Basic,17,40.61,0
+CUST-1725,Dunder Mifflin #825,17,83,74,3,7,Pro,10,158.46,0
+CUST-1726,Umbrella Corp #826,7,61,74,5,14,Pro,14,128.09,0
+CUST-1727,Acme Corp #827,15,60,80,0,9,Pro,27,125.65,0
+CUST-1728,Reynholm Industries #828,12,65,77,5,59,Pro,21,175.25,0
+CUST-1729,Dunder Mifflin #829,13,65,61,2,60,Pro,8,124.68,0
+CUST-1730,Initech #830,9,44,79,2,55,Basic,16,37.93,0
+CUST-1731,Vandelay Industries #831,5,52,73,4,57,Basic,26,42.9,1
+CUST-1732,Oscorp #832,6,57,71,2,60,Enterprise,25,538.81,0
+CUST-1733,Oscorp #833,12,39,62,4,19,Pro,11,158.45,0
+CUST-1734,Wayne Enterprises #834,12,56,93,2,47,Pro,6,157.94,0
+CUST-1735,Wayne Enterprises #835,9,50,54,2,52,Basic,9,42.68,0
+CUST-1736,Globex #836,8,58,75,1,14,Basic,24,36.4,0
+CUST-1737,Stark Industries #837,3,29,46,5,56,Pro,25,143.9,1
+CUST-1738,Wayne Enterprises #838,9,39,30,1,38,Enterprise,24,663.98,1
+CUST-1739,Gekko & Co #839,11,54,37,1,53,Pro,9,179.82,0
+CUST-1740,Soylent Corp #840,10,67,58,7,36,Pro,26,112.06,1
+CUST-1741,Initech #841,16,44,52,2,40,Pro,12,195.3,1
+CUST-1742,Oscorp #842,14,42,93,4,17,Basic,18,41.7,1
+CUST-1743,Wayne Enterprises #843,13,48,74,2,30,Basic,10,46.74,0
+CUST-1744,Aperture Science #844,13,50,76,6,9,Basic,12,37.52,1
+CUST-1745,Oscorp #845,7,17,38,7,33,Basic,20,35.65,0
+CUST-1746,Stark Industries #846,16,84,82,1,56,Enterprise,7,949.36,0
+CUST-1747,Prestige Worldwide #847,16,60,100,3,52,Basic,7,30.98,0
+CUST-1748,Vehement Capital #848,6,37,40,3,25,Pro,3,110.71,0
+CUST-1749,Initech #849,12,78,85,6,14,Basic,14,34.99,0
+CUST-1750,Gekko & Co #850,12,64,96,4,11,Basic,30,48.2,1
+CUST-1751,Oscorp #851,5,31,69,2,53,Basic,27,41.66,1
+CUST-1752,Hooli #852,9,50,92,3,35,Basic,10,40.08,0
+CUST-1753,Cyberdyne Systems #853,9,47,66,3,41,Pro,10,169.54,0
+CUST-1754,Soylent Corp #854,7,65,81,2,59,Basic,0,37.35,0
+CUST-1755,Dunder Mifflin #855,10,47,65,2,14,Pro,16,174.81,1
+CUST-1756,Soylent Corp #856,10,28,62,1,30,Basic,14,36.86,0
+CUST-1757,Bluth Company #857,10,21,36,4,41,Basic,19,45.53,1
+CUST-1758,Dunder Mifflin #858,15,82,92,1,4,Basic,5,34.35,0
+CUST-1759,Stark Industries #859,4,26,57,5,59,Pro,23,126.75,1
+CUST-1760,Vandelay Industries #860,10,60,70,2,4,Pro,21,151.24,0
+CUST-1761,Umbrella Corp #861,9,49,90,8,28,Basic,27,37.62,1
+CUST-1762,Cyberdyne Systems #862,5,33,52,2,8,Basic,24,41.96,1
+CUST-1763,Initech #863,12,50,83,2,2,Pro,14,135.43,0
+CUST-1764,Massive Dynamic #864,6,65,92,2,41,Basic,30,33.61,1
+CUST-1765,Stark Industries #865,9,26,65,2,46,Basic,8,38.4,0
+CUST-1766,Prestige Worldwide #866,12,48,49,3,22,Pro,13,155.1,0
+CUST-1767,Oscorp #867,8,59,74,3,41,Pro,17,113.26,0
+CUST-1768,Umbrella Corp #868,10,30,84,5,56,Basic,25,40.13,0
+CUST-1769,Oscorp #869,9,67,46,5,55,Enterprise,16,658.63,0
+CUST-1770,Globex #870,3,49,61,5,16,Pro,17,138.25,1
+CUST-1771,Oscorp #871,15,64,89,4,29,Basic,4,34.59,0
+CUST-1772,Reynholm Industries #872,10,42,59,4,49,Pro,19,192.14,0
+CUST-1773,Reynholm Industries #873,3,14,59,3,48,Pro,19,167.33,0
+CUST-1774,Dunder Mifflin #874,16,72,97,5,30,Basic,8,34.25,0
+CUST-1775,Bluth Company #875,15,101,93,3,12,Basic,10,41.9,0
+CUST-1776,Gekko & Co #876,3,38,66,3,35,Basic,23,45.97,0
+CUST-1777,Cyberdyne Systems #877,5,12,47,2,11,Pro,21,139.16,1
+CUST-1778,Massive Dynamic #878,14,64,76,1,46,Basic,0,45.6,0
+CUST-1779,Hooli #879,6,54,98,1,50,Pro,17,114.44,0
+CUST-1780,Vehement Capital #880,16,48,63,1,21,Pro,5,181.28,0
+CUST-1781,Vandelay Industries #881,7,34,51,3,21,Basic,26,39.81,1
+CUST-1782,Globex #882,9,36,73,0,5,Pro,1,121.3,0
+CUST-1783,Stark Industries #883,6,34,44,2,48,Basic,14,37.14,0
+CUST-1784,Vehement Capital #884,12,51,56,2,20,Pro,28,197.8,1
+CUST-1785,Hooli #885,15,47,54,4,37,Pro,25,177.36,1
+CUST-1786,Acme Corp #886,11,33,52,5,3,Basic,20,40.5,1
+CUST-1787,Vehement Capital #887,10,52,62,2,44,Basic,13,31.3,0
+CUST-1788,Vehement Capital #888,11,49,74,2,33,Basic,4,37.36,0
+CUST-1789,Tyrell Corp #889,16,55,62,0,53,Basic,5,34.26,0
+CUST-1790,Umbrella Corp #890,13,57,79,3,9,Basic,5,30.42,1
+CUST-1791,Aperture Science #891,1,9,57,10,9,Basic,29,39.84,1
+CUST-1792,Massive Dynamic #892,13,59,59,1,4,Enterprise,21,943.59,1
+CUST-1793,Initech #893,13,49,77,4,35,Basic,29,42.51,1
+CUST-1794,Gekko & Co #894,13,59,83,3,17,Basic,17,33.99,0
+CUST-1795,Reynholm Industries #895,5,45,36,7,34,Pro,13,156.36,0
+CUST-1796,Hooli #896,9,64,76,1,24,Basic,9,47.86,0
+CUST-1797,Umbrella Corp #897,1,33,48,0,32,Enterprise,13,860.46,0
+CUST-1798,Vehement Capital #898,19,84,100,7,1,Pro,12,167.95,0
+CUST-1799,Globex #899,4,33,48,4,8,Pro,30,195.82,1
+CUST-1800,Vandelay Industries #900,17,59,49,4,45,Basic,29,44.98,1
+CUST-1801,Aperture Science #901,24,76,77,2,23,Basic,2,31.73,0
+CUST-1802,Umbrella Corp #902,1,43,48,4,47,Basic,29,35.95,0
+CUST-1803,Oscorp #903,9,57,81,4,40,Pro,5,195.51,0
+CUST-1804,Vehement Capital #904,8,48,51,5,12,Basic,28,38.79,1
+CUST-1805,Dunder Mifflin #905,4,19,49,1,54,Basic,7,31.23,0
+CUST-1806,Vehement Capital #906,9,57,91,1,12,Enterprise,11,728.3,0
+CUST-1807,Gekko & Co #907,8,33,72,6,46,Basic,12,42.94,0
+CUST-1808,Globex #908,21,58,76,4,47,Basic,10,48.95,0
+CUST-1809,Oscorp #909,12,36,56,6,15,Basic,11,35.48,1
+CUST-1810,Aperture Science #910,13,54,72,0,41,Enterprise,0,756.04,0
+CUST-1811,Reynholm Industries #911,7,62,81,3,19,Basic,16,46.59,0
+CUST-1812,Gekko & Co #912,14,43,46,4,26,Pro,15,134.53,0
+CUST-1813,Stark Industries #913,9,73,89,1,52,Pro,10,109.93,0
+CUST-1814,Bluth Company #914,11,65,55,3,29,Basic,12,47.98,0
+CUST-1815,Hooli #915,6,20,58,8,22,Pro,17,147.84,1
+CUST-1816,Vehement Capital #916,4,32,39,2,40,Basic,10,39.06,1
+CUST-1817,Umbrella Corp #917,1,16,77,3,21,Basic,30,41.42,1
+CUST-1818,Gekko & Co #918,4,47,74,2,51,Pro,27,99.35,1
+CUST-1819,Vandelay Industries #919,10,35,34,1,38,Enterprise,11,964.57,0
+CUST-1820,Acme Corp #920,12,29,54,4,20,Pro,5,135.15,0
+CUST-1821,Vandelay Industries #921,12,49,56,3,57,Pro,8,138.69,0
+CUST-1822,Dunder Mifflin #922,8,63,61,7,29,Basic,15,32.48,0
+CUST-1823,Bluth Company #923,20,67,75,2,51,Basic,3,36.56,0
+CUST-1824,Oscorp #924,19,73,62,0,4,Basic,2,45.08,0
+CUST-1825,Acme Corp #925,6,48,75,7,55,Basic,27,45.0,1
+CUST-1826,Wayne Enterprises #926,11,29,65,3,7,Basic,15,47.72,0
+CUST-1827,Vehement Capital #927,6,28,59,5,28,Basic,23,37.06,0
+CUST-1828,Hooli #928,1,32,55,3,28,Basic,26,43.17,1
+CUST-1829,Aperture Science #929,7,35,67,7,4,Basic,25,39.14,1
+CUST-1830,Umbrella Corp #930,7,69,86,7,22,Pro,29,179.4,1
+CUST-1831,Stark Industries #931,1,13,53,2,12,Pro,24,170.25,1
+CUST-1832,Aperture Science #932,14,44,42,4,45,Basic,11,36.36,0
+CUST-1833,Initech #933,10,54,55,3,3,Enterprise,10,667.34,0
+CUST-1834,Acme Corp #934,15,50,60,5,22,Enterprise,4,625.22,0
+CUST-1835,Vehement Capital #935,6,5,20,2,44,Basic,24,40.53,1
+CUST-1836,Prestige Worldwide #936,16,91,88,2,2,Pro,17,195.38,0
+CUST-1837,Cyberdyne Systems #937,10,33,77,6,24,Pro,18,119.01,1
+CUST-1838,Hooli #938,13,64,90,4,34,Pro,22,108.53,0
+CUST-1839,Cyberdyne Systems #939,13,37,69,3,27,Basic,22,31.39,1
+CUST-1840,Bluth Company #940,7,31,66,1,55,Pro,5,177.31,0
+CUST-1841,Globex #941,5,15,80,6,41,Basic,21,36.0,1
+CUST-1842,Stark Industries #942,12,42,73,4,1,Pro,17,121.44,1
+CUST-1843,Reynholm Industries #943,5,30,68,4,8,Pro,25,134.28,1
+CUST-1844,Globex #944,12,52,44,4,23,Pro,5,163.53,0
+CUST-1845,Vandelay Industries #945,20,64,91,2,38,Pro,3,153.68,0
+CUST-1846,Acme Corp #946,10,28,59,1,6,Pro,11,173.36,1
+CUST-1847,Hooli #947,4,30,53,5,22,Basic,18,35.78,0
+CUST-1848,Massive Dynamic #948,2,55,62,4,25,Basic,28,38.04,1
+CUST-1849,Dunder Mifflin #949,18,85,74,2,18,Pro,26,109.2,0
+CUST-1850,Massive Dynamic #950,5,46,81,6,17,Basic,28,30.46,1
+CUST-1851,Aperture Science #951,7,53,66,1,12,Basic,1,38.25,0
+CUST-1852,Oscorp #952,1,62,63,3,6,Basic,16,35.03,1
+CUST-1853,Vehement Capital #953,8,54,55,2,26,Basic,10,41.26,0
+CUST-1854,Initech #954,11,61,73,3,27,Enterprise,10,520.5,0
+CUST-1855,Dunder Mifflin #955,13,32,50,3,8,Pro,20,111.18,1
+CUST-1856,Hooli #956,14,41,51,6,19,Enterprise,15,931.6,1
+CUST-1857,Bluth Company #957,14,57,47,3,60,Pro,1,155.63,0
+CUST-1858,Prestige Worldwide #958,12,41,74,1,42,Basic,1,43.24,0
+CUST-1859,Wayne Enterprises #959,10,35,55,1,1,Basic,22,45.84,1
+CUST-1860,Aperture Science #960,4,24,35,2,57,Pro,7,145.38,0
+CUST-1861,Massive Dynamic #961,21,50,60,1,29,Basic,12,44.22,0
+CUST-1862,Globex #962,15,48,72,1,45,Enterprise,9,761.29,0
+CUST-1863,Bluth Company #963,17,69,74,3,49,Pro,7,121.27,0
+CUST-1864,Initech #964,1,58,71,5,35,Basic,29,35.75,1
+CUST-1865,Initech #965,20,81,81,5,40,Enterprise,3,744.18,0
+CUST-1866,Acme Corp #966,8,55,48,4,14,Pro,14,130.69,1
+CUST-1867,Reynholm Industries #967,1,7,57,3,35,Pro,29,132.55,1
+CUST-1868,Reynholm Industries #968,14,59,43,3,48,Basic,0,35.75,0
+CUST-1869,Aperture Science #969,11,50,71,0,45,Basic,10,31.46,0
+CUST-1870,Massive Dynamic #970,7,48,73,2,20,Pro,6,107.46,0
+CUST-1871,Hooli #971,5,34,53,2,56,Basic,16,29.93,0
+CUST-1872,Wayne Enterprises #972,2,58,74,5,49,Basic,26,31.22,1
+CUST-1873,Initech #973,4,38,54,4,13,Pro,19,133.37,0
+CUST-1874,Hooli #974,6,44,67,3,38,Basic,23,40.88,1
+CUST-1875,Hooli #975,2,5,57,1,49,Pro,17,117.81,0
+CUST-1876,Gekko & Co #976,5,38,47,2,46,Enterprise,21,943.0,1
+CUST-1877,Wayne Enterprises #977,11,69,84,4,49,Enterprise,28,903.19,0
+CUST-1878,Umbrella Corp #978,12,62,96,5,8,Basic,21,39.41,1
+CUST-1879,Stark Industries #979,6,9,48,6,43,Enterprise,11,861.1,0
+CUST-1880,Cyberdyne Systems #980,17,57,60,7,20,Basic,8,36.33,1
+CUST-1881,Prestige Worldwide #981,3,61,100,1,60,Basic,4,29.74,0
+CUST-1882,Reynholm Industries #982,24,75,78,1,33,Pro,9,189.43,0
+CUST-1883,Reynholm Industries #983,20,74,80,3,26,Basic,3,31.56,0
+CUST-1884,Soylent Corp #984,11,76,81,3,39,Basic,4,47.96,0
+CUST-1885,Reynholm Industries #985,8,43,68,6,21,Pro,27,156.19,1
+CUST-1886,Wayne Enterprises #986,1,43,56,2,53,Basic,27,35.11,1
+CUST-1887,Gekko & Co #987,12,60,72,2,49,Basic,9,38.91,0
+CUST-1888,Vehement Capital #988,5,49,78,5,42,Basic,30,39.03,1
+CUST-1889,Acme Corp #989,7,49,58,7,43,Pro,10,101.33,1
+CUST-1890,Oscorp #990,6,33,50,3,54,Pro,20,134.55,0
+CUST-1891,Acme Corp #991,5,33,52,4,41,Basic,23,43.8,0
+CUST-1892,Dunder Mifflin #992,6,29,38,2,9,Basic,9,39.2,1
+CUST-1893,Acme Corp #993,2,9,34,6,24,Basic,27,33.88,1
+CUST-1894,Oscorp #994,5,58,58,1,37,Basic,7,35.7,0
+CUST-1895,Globex #995,18,66,72,4,49,Pro,1,185.31,0
+CUST-1896,Wayne Enterprises #996,3,53,79,7,41,Basic,22,39.51,1
+CUST-1897,Reynholm Industries #997,6,65,94,4,17,Basic,7,39.57,0
+CUST-1898,Reynholm Industries #998,14,58,69,3,24,Pro,15,195.15,0
+CUST-1899,Gekko & Co #999,9,28,60,4,21,Pro,26,131.09,1
+CUST-1900,Soylent Corp #1000,12,51,69,1,51,Pro,21,146.95,1
+CUST-1901,Gekko & Co #1001,18,55,36,0,59,Basic,4,45.23,0
+CUST-1902,Vehement Capital #1002,16,32,38,0,39,Basic,26,44.18,0
+CUST-1903,Vehement Capital #1003,7,36,69,4,55,Basic,24,34.32,1
+CUST-1904,Initech #1004,1,30,67,4,41,Basic,28,32.02,1
+CUST-1905,Soylent Corp #1005,15,50,77,3,39,Pro,2,169.07,0
+CUST-1906,Gekko & Co #1006,8,34,54,3,13,Pro,11,124.77,0
+CUST-1907,Reynholm Industries #1007,6,22,21,3,11,Pro,12,191.27,0
+CUST-1908,Cyberdyne Systems #1008,11,54,51,3,46,Pro,12,111.92,0
+CUST-1909,Vandelay Industries #1009,16,90,71,4,19,Basic,9,35.37,0
+CUST-1910,Oscorp #1010,9,67,82,3,11,Pro,3,104.48,0
+CUST-1911,Oscorp #1011,18,75,72,4,13,Basic,8,43.07,0
+CUST-1912,Acme Corp #1012,3,46,88,3,46,Pro,21,188.13,0
+CUST-1913,Vandelay Industries #1013,6,40,82,6,45,Basic,23,41.72,1
+CUST-1914,Soylent Corp #1014,10,22,76,3,1,Basic,22,47.76,1
+CUST-1915,Umbrella Corp #1015,5,34,43,4,40,Basic,26,31.57,0
+CUST-1916,Vehement Capital #1016,5,25,59,1,44,Enterprise,1,542.87,0
+CUST-1917,Acme Corp #1017,14,60,62,3,19,Basic,18,45.77,1
+CUST-1918,Hooli #1018,11,70,79,2,12,Basic,0,46.11,0
+CUST-1919,Acme Corp #1019,11,81,68,2,8,Basic,24,45.62,1
+CUST-1920,Umbrella Corp #1020,1,32,74,4,8,Pro,28,178.9,1
+CUST-1921,Globex #1021,7,18,37,1,53,Pro,6,135.22,0
+CUST-1922,Cyberdyne Systems #1022,14,58,39,2,45,Pro,16,120.75,0
+CUST-1923,Hooli #1023,16,63,100,3,12,Basic,2,47.58,0
+CUST-1924,Cyberdyne Systems #1024,7,54,73,4,48,Pro,19,129.7,0
+CUST-1925,Acme Corp #1025,11,51,49,5,33,Basic,19,36.97,1
+CUST-1926,Vehement Capital #1026,4,38,56,2,45,Pro,20,168.96,0
+CUST-1927,Stark Industries #1027,6,32,47,4,26,Pro,29,128.34,1
+CUST-1928,Oscorp #1028,15,55,67,1,39,Basic,2,45.38,0
+CUST-1929,Umbrella Corp #1029,12,61,82,2,28,Basic,2,30.4,0
+CUST-1930,Stark Industries #1030,6,11,55,4,58,Basic,16,44.82,0
+CUST-1931,Vandelay Industries #1031,13,51,69,1,5,Basic,6,41.04,0
+CUST-1932,Oscorp #1032,6,52,66,7,8,Basic,26,40.46,1
+CUST-1933,Reynholm Industries #1033,5,64,88,5,25,Pro,25,144.84,1
+CUST-1934,Hooli #1034,5,34,28,4,27,Basic,13,34.54,1
+CUST-1935,Oscorp #1035,10,67,62,2,46,Basic,16,38.28,0
+CUST-1936,Umbrella Corp #1036,7,69,59,2,23,Basic,17,38.0,1
+CUST-1937,Bluth Company #1037,6,36,73,3,30,Basic,12,40.68,1
+CUST-1938,Stark Industries #1038,9,39,48,2,45,Enterprise,19,639.79,0
+CUST-1939,Globex #1039,14,55,48,4,47,Basic,28,30.55,1
+CUST-1940,Gekko & Co #1040,7,42,69,0,23,Pro,19,113.51,0
+CUST-1941,Gekko & Co #1041,16,78,65,4,49,Pro,20,168.92,1
+CUST-1942,Umbrella Corp #1042,17,52,60,2,47,Pro,26,101.25,1
+CUST-1943,Umbrella Corp #1043,5,63,100,5,20,Enterprise,17,927.22,1
+CUST-1944,Aperture Science #1044,14,45,74,4,18,Basic,3,42.89,0
+CUST-1945,Hooli #1045,25,61,67,1,18,Enterprise,0,883.04,0
+CUST-1946,Vandelay Industries #1046,9,55,65,4,2,Basic,17,45.72,0
+CUST-1947,Aperture Science #1047,15,78,92,0,4,Basic,0,31.45,0
+CUST-1948,Cyberdyne Systems #1048,1,34,66,2,30,Pro,25,181.25,0
+CUST-1949,Reynholm Industries #1049,4,44,63,6,33,Enterprise,25,751.32,1
+CUST-1950,Vehement Capital #1050,14,87,85,1,36,Pro,12,187.55,0
+CUST-1951,Vehement Capital #1051,21,90,62,1,18,Basic,19,46.73,1
+CUST-1952,Reynholm Industries #1052,8,46,37,4,37,Basic,19,29.48,1
+CUST-1953,Oscorp #1053,1,25,49,3,19,Enterprise,22,690.43,1
+CUST-1954,Wayne Enterprises #1054,5,56,58,2,47,Basic,9,39.53,1
+CUST-1955,Aperture Science #1055,7,56,76,6,28,Pro,26,166.84,1
+CUST-1956,Bluth Company #1056,17,70,77,3,40,Pro,10,127.62,0
+CUST-1957,Stark Industries #1057,15,55,55,2,20,Basic,8,34.04,0
+CUST-1958,Reynholm Industries #1058,14,56,70,3,49,Basic,8,36.63,0
+CUST-1959,Prestige Worldwide #1059,20,67,67,2,33,Basic,4,39.02,0
+CUST-1960,Acme Corp #1060,3,31,86,5,12,Basic,25,48.02,1
+CUST-1961,Oscorp #1061,15,50,70,1,58,Enterprise,0,880.05,0
+CUST-1962,Reynholm Industries #1062,7,47,40,3,51,Basic,16,37.59,0
+CUST-1963,Aperture Science #1063,7,34,84,3,15,Enterprise,21,526.18,0
+CUST-1964,Bluth Company #1064,9,50,55,1,41,Basic,1,32.37,0
+CUST-1965,Bluth Company #1065,6,10,30,2,39,Enterprise,23,726.96,1
+CUST-1966,Umbrella Corp #1066,11,43,93,2,2,Basic,12,45.28,0
+CUST-1967,Tyrell Corp #1067,10,66,78,2,29,Basic,8,36.61,0
+CUST-1968,Umbrella Corp #1068,5,26,63,5,41,Basic,28,39.77,1
+CUST-1969,Hooli #1069,16,70,85,1,10,Pro,3,188.18,0
+CUST-1970,Hooli #1070,19,55,64,1,2,Pro,4,190.38,0
+CUST-1971,Reynholm Industries #1071,18,77,69,2,51,Pro,10,120.58,0
+CUST-1972,Cyberdyne Systems #1072,11,47,57,3,11,Basic,23,29.87,0
+CUST-1973,Dunder Mifflin #1073,3,30,79,1,13,Basic,18,35.11,1
+CUST-1974,Massive Dynamic #1074,7,44,65,3,10,Pro,20,168.58,0
+CUST-1975,Gekko & Co #1075,13,35,77,2,14,Basic,2,48.02,0
+CUST-1976,Wayne Enterprises #1076,8,60,68,4,18,Basic,11,30.54,0
+CUST-1977,Reynholm Industries #1077,9,67,62,3,51,Enterprise,25,513.24,1
+CUST-1978,Massive Dynamic #1078,1,26,31,4,54,Enterprise,18,941.07,0
+CUST-1979,Aperture Science #1079,18,73,86,3,9,Enterprise,18,873.07,0
+CUST-1980,Acme Corp #1080,17,75,100,3,57,Pro,12,198.22,0
+CUST-1981,Wayne Enterprises #1081,9,46,49,8,39,Basic,27,36.94,1
+CUST-1982,Hooli #1082,12,37,66,0,28,Basic,6,37.32,0
+CUST-1983,Wayne Enterprises #1083,16,85,61,1,3,Pro,14,116.23,0
+CUST-1984,Umbrella Corp #1084,11,46,54,3,20,Pro,22,110.58,1
+CUST-1985,Acme Corp #1085,18,56,72,3,6,Basic,6,40.57,0
+CUST-1986,Gekko & Co #1086,7,68,48,7,27,Basic,25,36.29,1
+CUST-1987,Reynholm Industries #1087,21,81,80,2,53,Basic,7,30.61,0
+CUST-1988,Oscorp #1088,19,71,62,2,2,Pro,4,187.7,0
+CUST-1989,Oscorp #1089,11,37,67,4,29,Enterprise,20,598.18,0
+CUST-1990,Massive Dynamic #1090,17,76,75,4,38,Pro,13,173.86,0
+CUST-1991,Massive Dynamic #1091,12,97,100,1,3,Basic,3,34.64,0
+CUST-1992,Cyberdyne Systems #1092,2,47,59,8,16,Enterprise,22,905.45,1
+CUST-1993,Vandelay Industries #1093,13,63,51,0,30,Pro,9,110.84,0
+CUST-1994,Massive Dynamic #1094,9,58,46,4,40,Basic,19,44.12,0
+CUST-1995,Initech #1095,9,43,32,3,2,Basic,14,30.96,0
+CUST-1996,Vandelay Industries #1096,15,54,76,3,17,Basic,17,37.94,1
+CUST-1997,Aperture Science #1097,10,44,100,3,41,Basic,19,43.68,0
+CUST-1998,Vehement Capital #1098,12,45,69,3,12,Enterprise,12,585.61,0
+CUST-1999,Globex #1099,4,32,81,2,35,Basic,28,34.71,0

@@ -1,9 +1,9 @@
 {
-    "accuracy": 0.75,
-    "precision": 0.6363636363636364,
-    "recall": 0.875,
-    "f1": 0.7368421052631579,
-    "auc_roc": 0.7916666666666667,
-    "total_customers": 100,
-    "churn_rate": 0.4
+    "accuracy": 0.785,
+    "precision": 0.6790123456790124,
+    "recall": 0.7638888888888888,
+    "f1": 0.7189542483660131,
+    "auc_roc": 0.8669704861111112,
+    "total_customers": 1000,
+    "churn_rate": 0.358
 }
